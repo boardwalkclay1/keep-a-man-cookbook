@@ -17,20 +17,19 @@ export const APP_DATA = {
 
 console.log("APP_DATA Loaded:", APP_DATA);
 
-// -------------------------------
-// PAGE LOGIC
-// -------------------------------
-
+// MAIN APP CONTAINER
 const app = document.getElementById("app");
 
-// Render a simple list UI
+// -------------------------------
+// RENDER FUNCTIONS
+// -------------------------------
+
+// Generic list renderer
 function renderList(title, items) {
     app.innerHTML = `
         <h2 class="page-title">${title}</h2>
         <div class="list-container">
-            ${items
-                .map(
-                    item => `
+            ${items.map(item => `
                 <div class="list-item">
                     <img src="${item.image}" class="item-img"/>
                     <div class="item-info">
@@ -38,13 +37,12 @@ function renderList(title, items) {
                         <p><strong>Pairs With:</strong> ${formatPairs(item)}</p>
                     </div>
                 </div>
-            `
-                )
-                .join("")}
+            `).join("")}
         </div>
     `;
 }
 
+// Format pairsWith field
 function formatPairs(item) {
     if (!item.pairsWith) return "N/A";
 
@@ -53,9 +51,7 @@ function formatPairs(item) {
     }
 
     if (typeof item.pairsWith === "object") {
-        return Object.values(item.pairsWith)
-            .flat()
-            .join(", ");
+        return Object.values(item.pairsWith).flat().join(", ");
     }
 
     return "N/A";
@@ -69,8 +65,22 @@ const routes = {
     "meal-builder": () => {
         app.innerHTML = `
             <h2 class="page-title">Meal Builder</h2>
-            <p>Select ingredients from each category to build a meal.</p>
+            <p class="page-desc">Choose ingredients from each category to build a meal.</p>
+
+            <div class="category-list">
+                <button class="btn subcat" data-sub="meats">Meats</button>
+                <button class="btn subcat" data-sub="fillers">Fillers</button>
+                <button class="btn subcat" data-sub="vegetables">Vegetables</button>
+                <button class="btn subcat" data-sub="plus">Plus</button>
+            </div>
         `;
+
+        document.querySelectorAll(".subcat").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const sub = btn.dataset.sub;
+                renderList(sub.toUpperCase(), APP_DATA[sub]);
+            });
+        });
     },
 
     sandwiches: () => renderList("Sandwiches", APP_DATA.sandwiches),
@@ -80,7 +90,7 @@ const routes = {
     history: () => {
         app.innerHTML = `
             <h2 class="page-title">Meal History</h2>
-            <p>No meals saved yet.</p>
+            <p class="page-desc">No meals saved yet.</p>
         `;
     },
 
@@ -113,7 +123,7 @@ const routes = {
 document.querySelectorAll("nav .btn").forEach(btn => {
     btn.addEventListener("click", () => {
         const page = btn.dataset.page;
-        if (routes[page]) routes[page]();
+        routes[page]();
     });
 });
 
