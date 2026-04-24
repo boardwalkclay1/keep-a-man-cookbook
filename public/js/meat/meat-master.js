@@ -5,9 +5,11 @@ import meatPremium from "./meat-premium.js";
 import meatMisc from "./meat-misc.js";
 
 export const MEAT_ITEMS = [
-    ...meatBasic,
-    ...meatCanned,
-    ...meatFrozen,
-    ...meatPremium,
-    ...meatMisc
+  ...meatBasic,
+  ...meatCanned,
+  ...meatFrozen,
+  ...meatPremium,
+  ...meatMisc
 ];
+
+export default MEAT_ITEMS;
