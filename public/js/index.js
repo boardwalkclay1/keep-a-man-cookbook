@@ -176,16 +176,21 @@ const routes = {
 };
 
 /* --------------------------------------------------
-   NAVIGATION
+   NAVIGATION (FIXED)
 -------------------------------------------------- */
-document.querySelectorAll("nav .btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        const page = btn.dataset.page;
-        routes[page]();
+function attachNavListeners() {
+    document.querySelectorAll("nav .btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const page = btn.dataset.page;
+            routes[page]();
+        });
     });
-});
+}
 
 /* --------------------------------------------------
-   DEFAULT PAGE
+   INITIALIZE APP (THE FIX)
 -------------------------------------------------- */
-routes["meal-builder"]();
+renderLayout();          // 1️⃣ Create panels first
+renderMainCategories();  // 2️⃣ Load left panel
+attachNavListeners();    // 3️⃣ Attach nav AFTER layout exists
+routes["meal-builder"](); // 4️⃣ Load default route
