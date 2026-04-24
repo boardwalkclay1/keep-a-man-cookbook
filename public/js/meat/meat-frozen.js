@@ -1,6 +1,7 @@
 export default [
     {
         name: "Frozen Meatballs",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/beef/beef2.jpg",
     image: "https://foodish-api.com/images/beef/beef2.jpg",
 
@@ -47,6 +48,7 @@ export default [
 
     {
         name: "Frozen Chicken Strips",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/chicken/chicken4.jpg",
     image: "https://foodish-api.com/images/chicken/chicken4.jpg",
 
@@ -93,6 +95,7 @@ export default [
 
     {
         name: "Frozen Sausage Patties",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/sausage/sausage1.jpg",
     image: "https://foodish-api.com/images/sausage/sausage1.jpg",
 

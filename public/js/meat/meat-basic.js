@@ -1,6 +1,7 @@
 export default [
     {
         name: "Chicken Thighs",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/chicken/chicken3.jpg",
     image: "https://foodish-api.com/images/chicken/chicken3.jpg",
 
@@ -48,6 +49,7 @@ export default [
 
     {
         name: "Chicken Breast",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/chicken/chicken2.jpg",
     image: "https://foodish-api.com/images/chicken/chicken2.jpg",
 
@@ -95,6 +97,7 @@ export default [
 
     {
         name: "Ground Beef",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/beef/beef3.jpg",
     image: "https://foodish-api.com/images/beef/beef3.jpg",
 
@@ -142,6 +145,7 @@ export default [
 
     {
         name: "Ground Turkey",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/turkey/turkey1.jpg",
     image: "https://foodish-api.com/images/turkey/turkey1.jpg",
 

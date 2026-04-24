@@ -1,6 +1,7 @@
 export default [
     {
         name: "Canned Tuna",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/fish/fish1.jpg",
     image: "https://foodish-api.com/images/fish/fish1.jpg",
 
@@ -48,6 +49,7 @@ export default [
 
     {
         name: "Canned Chicken",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/chicken/chicken1.jpg",
     image: "https://foodish-api.com/images/chicken/chicken1.jpg",
 
@@ -95,6 +97,7 @@ export default [
 
     {
         name: "Spam",
+    emoji: "🍖",
     image: "https://foodish-api.com/images/pork/pork2.jpg",
     image: "https://foodish-api.com/images/pork/pork2.jpg",
 
