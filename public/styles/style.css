@@ -170,3 +170,40 @@ footer {
 .item-info h3 {
     margin-bottom: 10px;
 }
+.page-title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.page-desc {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-item {
+    display: flex;
+    gap: 20px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.item-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
