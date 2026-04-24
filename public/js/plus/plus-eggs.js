@@ -2,22 +2,40 @@ export default [
     {
         name: "Whole Eggs",
         emoji: "🥚",
-        image: "https://source.unsplash.com/featured/?eggs",
+        image: "https://source.unsplash.com/400x300/?eggs,food",
+        tags: ["protein", "breakfast", "cheap", "versatile"],
+        time: { prep: "1 min", cook: "2–10 min" },
+        difficulty: "easy",
+
         directions: [
-            "Scramble 3–4 minutes.",
-            "Fry 2–3 minutes per side.",
-            "Boil 10 minutes for hard-boiled."
+            "Scramble 3–4 minutes with butter or oil.",
+            "Fry 2–3 minutes per side for over‑easy or over‑medium.",
+            "Boil 10 minutes for hard‑boiled eggs.",
+            "Whisk into rice or noodles for creamy texture.",
+            "Add to stir‑fries, bowls, or sandwiches."
         ],
+
+        variations: [
+            "Cheesy Eggs — add cheddar or mozzarella.",
+            "Veggie Omelet — add peppers + onions + spinach.",
+            "Egg Fried Rice — fry rice + soy sauce + eggs.",
+            "Breakfast Sandwich — egg + cheese + meat on bread."
+        ],
+
         mealPrep: [
-            "Hard-boiled eggs last 7 days.",
-            "Scrambled eggs last 3 days.",
-            "Add to rice, ramen, or sandwiches."
+            "Hard‑boiled eggs last 7 days refrigerated.",
+            "Scrambled eggs last 3 days in sealed container.",
+            "Perfect for bowls, sandwiches, and salads.",
+            "Add to ramen or rice for instant protein boost."
         ],
+
         pairsWith: {
-            meats: ["spam", "bacon", "sausage", "chicken"],
-            fillers: ["rice", "ramen", "bread"],
-            vegetables: ["spinach", "onions", "peppers"]
+            meats: ["spam", "bacon", "sausage", "chicken", "turkey"],
+            fillers: ["rice", "ramen", "bread", "tortillas"],
+            vegetables: ["spinach", "onions", "peppers", "tomatoes"],
+            plus: ["cheese", "salsa", "hot sauce"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=eggs",
             kroger: "https://www.kroger.com/search?query=eggs",
@@ -30,22 +48,40 @@ export default [
     {
         name: "Egg Whites",
         emoji: "⚪",
-        image: "https://source.unsplash.com/featured/?egg,whites",
+        image: "https://source.unsplash.com/400x300/?egg,whites,food",
+        tags: ["lean", "low‑fat", "high‑protein"],
+        time: { prep: "1 min", cook: "3–4 min" },
+        difficulty: "easy",
+
         directions: [
-            "Cook 3–4 minutes until firm.",
-            "Mix with veggies for low-fat meals.",
-            "Use in breakfast bowls."
+            "Cook 3–4 minutes until firm and fluffy.",
+            "Mix with veggies for low‑fat meals.",
+            "Use in breakfast bowls or wraps.",
+            "Add to rice for high‑protein stir‑fry.",
+            "Whisk into omelets for extra volume."
         ],
+
+        variations: [
+            "Veggie Egg Whites — spinach + peppers + onions.",
+            "Egg White Wrap — cook thin layer and use as wrap.",
+            "Protein Scramble — add turkey + cheese.",
+            "Egg White Fried Rice — soy sauce + veggies + whites."
+        ],
+
         mealPrep: [
             "Lasts 3 days cooked.",
-            "High protein, low fat.",
-            "Great for meal prep bowls."
+            "Great for meal‑prep bowls.",
+            "Low‑fat alternative to whole eggs.",
+            "Mix with whole eggs for balanced macros."
         ],
+
         pairsWith: {
-            meats: ["ground turkey", "chicken"],
-            fillers: ["rice", "tortillas"],
-            vegetables: ["spinach", "peppers"]
+            meats: ["ground turkey", "chicken", "ham", "sausage"],
+            fillers: ["rice", "tortillas", "ramen", "bread"],
+            vegetables: ["spinach", "peppers", "onions", "broccoli"],
+            plus: ["cheese", "salsa", "hot sauce"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=egg+whites",
             kroger: "https://www.kroger.com/search?query=egg%20whites",
