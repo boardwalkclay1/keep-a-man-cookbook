@@ -1,8 +1,9 @@
 export default [
     {
         name: "Hot Dogs",
+    image: "https://foodish-api.com/images/hotdog/hotdog1.jpg",
         emoji: "🌭",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/hotdog/hotdog1.jpg",
         tags: ["cheap", "fast", "kid-friendly"],
         time: { prep: "0 min", cook: "3–6 min" },
         difficulty: "very easy",
@@ -44,8 +45,9 @@ export default [
 
     {
         name: "Bacon",
+    image: "https://foodish-api.com/images/bacon/bacon1.jpg",
         emoji: "🥓",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/bacon/bacon1.jpg",
         tags: ["crispy", "breakfast", "salty"],
         time: { prep: "1 min", cook: "8–15 min" },
         difficulty: "easy",
@@ -87,8 +89,9 @@ export default [
 
     {
         name: "Sausage Links",
+    image: "https://foodish-api.com/images/sausage/sausage2.jpg",
         emoji: "🌭",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/sausage/sausage2.jpg",
         tags: ["breakfast", "protein", "quick"],
         time: { prep: "0 min", cook: "5–10 min" },
         difficulty: "easy",

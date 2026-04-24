@@ -1,8 +1,9 @@
 export const sandwichesHot = [
     {
         name: "Grilled Cheese",
+    image: "https://foodish-api.com/images/sandwiches/sandwich4.jpg",
         emoji: "🧀",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/sandwiches/sandwich4.jpg",
         ingredients: ["bread", "cheddar cheese", "butter"],
         directions: [
             "Butter bread.",
@@ -29,8 +30,9 @@ export const sandwichesHot = [
 
     {
         name: "Chicken Melt",
+    image: "https://foodish-api.com/images/sandwiches/sandwich2.jpg",
         emoji: "🍗",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/sandwiches/sandwich2.jpg",
         ingredients: ["chicken", "cheese", "bread", "mayo"],
         directions: [
             "Layer chicken + cheese.",

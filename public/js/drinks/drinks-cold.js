@@ -1,8 +1,9 @@
 export const drinksCold = [
     {
         name: "Sweet Tea",
+    image: "https://foodish-api.com/images/beverages/beverage8.jpg",
         emoji: "🧊",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beverages/beverage8.jpg",
         directions: [
             "Boil water.",
             "Steep tea bags 10 minutes.",
@@ -26,8 +27,9 @@ export const drinksCold = [
 
     {
         name: "Lemonade",
+    image: "https://foodish-api.com/images/beverages/beverage5.jpg",
         emoji: "🍋",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beverages/beverage5.jpg",
         directions: [
             "Mix lemon juice + sugar + water.",
             "Stir until dissolved.",
@@ -50,8 +52,9 @@ export const drinksCold = [
 
     {
         name: "Kool-Aid",
+    image: "https://foodish-api.com/images/beverages/beverage4.jpg",
         emoji: "🟥",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beverages/beverage4.jpg",
         directions: [
             "Mix packet + sugar + water.",
             "Stir well.",

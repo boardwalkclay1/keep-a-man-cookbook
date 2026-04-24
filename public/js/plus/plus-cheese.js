@@ -1,8 +1,9 @@
 export default [
     {
         name: "Cheddar Cheese",
+    image: "https://foodish-api.com/images/dairy/cheese.jpg",
         emoji: "🧀",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/dairy/cheese.jpg",
         tags: ["sharp", "melty", "classic", "high-calorie"],
         time: { prep: "0–2 min", cook: "1–5 min (melting)" },
         difficulty: "very easy",
@@ -47,8 +48,9 @@ export default [
 
     {
         name: "Mozzarella",
+    image: "https://foodish-api.com/images/dairy/cheese2.jpg",
         emoji: "🧀",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/dairy/cheese2.jpg",
         tags: ["melty", "stretchy", "italian"],
         time: { prep: "0–2 min", cook: "1–5 min" },
         difficulty: "very easy",

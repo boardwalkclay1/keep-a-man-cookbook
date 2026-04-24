@@ -1,8 +1,9 @@
 export default [
     {
         name: "Canned Carrots",
+    image: "https://foodish-api.com/images/vegetables/carrot.jpg",
         emoji: "🥕",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/vegetables/carrot.jpg",
         directions: [
             "Drain and heat 3–4 minutes.",
             "Add butter and brown sugar for glaze.",
@@ -29,8 +30,9 @@ export default [
 
     {
         name: "Canned Potatoes",
+    image: "https://foodish-api.com/images/vegetables/potato.jpg",
         emoji: "🥔",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/vegetables/potato.jpg",
         directions: [
             "Drain and pan-fry 8 minutes.",
             "Season with garlic and paprika.",

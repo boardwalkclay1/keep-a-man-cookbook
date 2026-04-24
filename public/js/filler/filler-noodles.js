@@ -1,8 +1,9 @@
 export default [
     {
         name: "Ramen Noodles",
+    image: "https://foodish-api.com/images/pasta/pasta2.jpg",
         emoji: "🍜",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/pasta/pasta2.jpg",
         tags: ["cheap", "fast", "versatile"],
         time: { prep: "1 min", cook: "3 min" },
         difficulty: "very easy",
@@ -44,8 +45,9 @@ export default [
 
     {
         name: "Egg Noodles",
+    image: "https://foodish-api.com/images/pasta/pasta1.jpg",
         emoji: "🍝",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/pasta/pasta1.jpg",
         tags: ["comfort", "soft", "classic"],
         time: { prep: "1 min", cook: "6–7 min" },
         difficulty: "easy",
@@ -87,8 +89,9 @@ export default [
 
     {
         name: "Spaghetti",
+    image: "https://foodish-api.com/images/pasta/pasta4.jpg",
         emoji: "🍝",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/pasta/pasta4.jpg",
         tags: ["classic", "meal-prep", "cheap"],
         time: { prep: "1 min", cook: "10–12 min" },
         difficulty: "easy",
@@ -130,8 +133,9 @@ export default [
 
     {
         name: "Rice Noodles",
+    image: "https://foodish-api.com/images/pasta/pasta3.jpg",
         emoji: "🍜",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/pasta/pasta3.jpg",
         tags: ["asian", "light", "gluten-free"],
         time: { prep: "1 min", cook: "10 min soak" },
         difficulty: "easy",

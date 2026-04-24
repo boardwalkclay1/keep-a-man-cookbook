@@ -1,8 +1,9 @@
 export default [
     {
         name: "Canned Tuna",
+    image: "https://foodish-api.com/images/fish/fish1.jpg",
         emoji: "🐟",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/fish/fish1.jpg",
         tags: ["cheap", "fast", "high-protein"],
         time: { prep: "1 min", cook: "0–5 min" },
         difficulty: "very easy",
@@ -45,8 +46,9 @@ export default [
 
     {
         name: "Canned Chicken",
+    image: "https://foodish-api.com/images/chicken/chicken1.jpg",
         emoji: "🥫",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/chicken/chicken1.jpg",
         tags: ["cheap", "fast", "versatile"],
         time: { prep: "1 min", cook: "0–5 min" },
         difficulty: "very easy",
@@ -89,8 +91,9 @@ export default [
 
     {
         name: "Spam",
+    image: "https://foodish-api.com/images/pork/pork2.jpg",
         emoji: "🟪",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/pork/pork2.jpg",
         tags: ["long-shelf-life", "crispy", "salty"],
         time: { prep: "1 min", cook: "5–8 min" },
         difficulty: "easy",

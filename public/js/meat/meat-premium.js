@@ -1,8 +1,9 @@
 export default [
     {
         name: "Steak Strips",
+    image: "https://foodish-api.com/images/beef/beef4.jpg",
         emoji: "🥩",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beef/beef4.jpg",
         tags: ["premium", "quick", "high-protein"],
         time: { prep: "5 min", cook: "4–8 min" },
         difficulty: "medium",
@@ -45,8 +46,9 @@ export default [
 
     {
         name: "Pork Chops",
+    image: "https://foodish-api.com/images/pork/pork1.jpg",
         emoji: "🍖",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/pork/pork1.jpg",
         tags: ["juicy", "budget", "family-friendly"],
         time: { prep: "5 min", cook: "12–22 min" },
         difficulty: "medium",
@@ -89,8 +91,9 @@ export default [
 
     {
         name: "Beef Roast",
+    image: "https://foodish-api.com/images/beef/beef1.jpg",
         emoji: "🍲",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beef/beef1.jpg",
         tags: ["slow-cook", "tender", "meal-prep"],
         time: { prep: "10 min", cook: "3–8 hours" },
         difficulty: "easy",

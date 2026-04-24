@@ -1,8 +1,9 @@
 export default [
     {
         name: "Frozen Meatballs",
+    image: "https://foodish-api.com/images/beef/beef2.jpg",
         emoji: "🍝",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beef/beef2.jpg",
         tags: ["frozen", "quick", "family-friendly"],
         time: { prep: "0 min", cook: "10–18 min" },
         difficulty: "very easy",
@@ -44,8 +45,9 @@ export default [
 
     {
         name: "Frozen Chicken Strips",
+    image: "https://foodish-api.com/images/chicken/chicken4.jpg",
         emoji: "🍗",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/chicken/chicken4.jpg",
         tags: ["crispy", "fast", "kid-friendly"],
         time: { prep: "0 min", cook: "10–18 min" },
         difficulty: "very easy",
@@ -87,8 +89,9 @@ export default [
 
     {
         name: "Frozen Sausage Patties",
+    image: "https://foodish-api.com/images/sausage/sausage1.jpg",
         emoji: "🥓",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/sausage/sausage1.jpg",
         tags: ["breakfast", "fast", "protein"],
         time: { prep: "0 min", cook: "1–8 min" },
         difficulty: "very easy",

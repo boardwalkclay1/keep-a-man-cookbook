@@ -1,8 +1,9 @@
 export default [
     {
         name: "Chicken Thighs",
+    image: "https://foodish-api.com/images/chicken/chicken3.jpg",
         emoji: "🍗",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/chicken/chicken3.jpg",
         tags: ["juicy", "budget", "high-protein", "meal-prep"],
         time: { prep: "5 min", cook: "20–25 min" },
         difficulty: "easy",
@@ -45,8 +46,9 @@ export default [
 
     {
         name: "Chicken Breast",
+    image: "https://foodish-api.com/images/chicken/chicken2.jpg",
         emoji: "🍗",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/chicken/chicken2.jpg",
         tags: ["lean", "high-protein", "versatile"],
         time: { prep: "5 min", cook: "15–22 min" },
         difficulty: "medium",
@@ -89,8 +91,9 @@ export default [
 
     {
         name: "Ground Beef",
+    image: "https://foodish-api.com/images/beef/beef3.jpg",
         emoji: "🥩",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beef/beef3.jpg",
         tags: ["fast", "versatile", "high-protein"],
         time: { prep: "2 min", cook: "8–10 min" },
         difficulty: "easy",
@@ -133,8 +136,9 @@ export default [
 
     {
         name: "Ground Turkey",
+    image: "https://foodish-api.com/images/turkey/turkey1.jpg",
         emoji: "🦃",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/turkey/turkey1.jpg",
         tags: ["lean", "budget", "healthy"],
         time: { prep: "2 min", cook: "8–10 min" },
         difficulty: "easy",

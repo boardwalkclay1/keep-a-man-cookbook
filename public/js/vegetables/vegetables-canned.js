@@ -1,8 +1,9 @@
 export default [
     {
         name: "Canned Green Beans",
+    image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
         emoji: "🥫",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
         directions: [
             "Drain and heat 3–4 minutes.",
             "Sauté with onions.",
@@ -29,8 +30,9 @@ export default [
 
     {
         name: "Canned Corn",
+    image: "https://foodish-api.com/images/vegetables/corn.jpg",
         emoji: "🌽",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/vegetables/corn.jpg",
         directions: [
             "Drain and heat 2–3 minutes.",
             "Mix into rice or noodles.",
@@ -57,8 +59,9 @@ export default [
 
     {
         name: "Canned Diced Tomatoes",
+    image: "https://foodish-api.com/images/vegetables/tomato.jpg",
         emoji: "🍅",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/vegetables/tomato.jpg",
         directions: [
             "Heat 3–4 minutes.",
             "Add to pasta or rice.",

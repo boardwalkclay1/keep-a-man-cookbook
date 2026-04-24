@@ -1,8 +1,9 @@
 export const drinksSmoothies = [
     {
         name: "Strawberry Smoothie",
+    image: "https://foodish-api.com/images/beverages/beverage7.jpg",
         emoji: "🍓",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beverages/beverage7.jpg",
         directions: [
             "Blend strawberries, yogurt, and ice until smooth.",
             "Add honey or sugar if needed.",
@@ -25,8 +26,9 @@ export const drinksSmoothies = [
 
     {
         name: "Banana Protein Shake",
+    image: "https://foodish-api.com/images/beverages/beverage1.jpg",
         emoji: "🥤",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beverages/beverage1.jpg",
         directions: [
             "Blend banana, milk, and protein powder.",
             "Add ice for thickness.",
@@ -49,8 +51,9 @@ export const drinksSmoothies = [
 
     {
         name: "Mango Smoothie",
+    image: "https://foodish-api.com/images/beverages/beverage6.jpg",
         emoji: "🥭",
-        image: "https://picsum.photos/seed/default/400/300",
+        image: "https://foodish-api.com/images/beverages/beverage6.jpg",
         directions: [
             "Blend frozen mango, orange juice, and yogurt.",
             "Add ice if needed.",
