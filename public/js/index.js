@@ -20,22 +20,112 @@ console.log("APP_DATA Loaded:", APP_DATA);
 // MAIN APP CONTAINER
 const app = document.getElementById("app");
 
-// -------------------------------
-// GENERIC LIST RENDERER
-// -------------------------------
-function renderList(title, items) {
+// --------------------------------------------------
+// RENDER LAYOUT
+// --------------------------------------------------
+function renderLayout() {
     app.innerHTML = `
-        <h2 class="page-title">${title}</h2>
-        <div class="list-container">
+        <div id="layout">
+            <div id="left-panel"></div>
+            <div id="middle-panel"></div>
+            <div id="right-panel"></div>
+        </div>
+    `;
+}
+
+function left() { return document.getElementById("left-panel"); }
+function middle() { return document.getElementById("middle-panel"); }
+function right() { return document.getElementById("right-panel"); }
+
+// --------------------------------------------------
+// RENDER MAIN CATEGORIES
+// --------------------------------------------------
+function renderMainCategories() {
+    left().innerHTML = `
+        <h2 class="panel-title">Categories</h2>
+        <div class="panel-list">
+            <button class="panel-btn" data-cat="meats">Meats</button>
+            <button class="panel-btn" data-cat="fillers">Fillers</button>
+            <button class="panel-btn" data-cat="vegetables">Vegetables</button>
+            <button class="panel-btn" data-cat="plus">Plus</button>
+            <button class="panel-btn" data-cat="sandwiches">Sandwiches</button>
+            <button class="panel-btn" data-cat="drinks">Drinks</button>
+        </div>
+    `;
+
+    document.querySelectorAll(".panel-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const cat = btn.dataset.cat;
+            renderSubcategories(cat);
+        });
+    });
+}
+
+// --------------------------------------------------
+// RENDER SUBCATEGORIES (middle panel)
+// --------------------------------------------------
+function renderSubcategories(category) {
+    const items = APP_DATA[category];
+
+    middle().innerHTML = `
+        <h2 class="panel-title">${category.toUpperCase()}</h2>
+        <div class="panel-list">
             ${items.map(item => `
-                <div class="list-item">
-                    <img src="${item.image}" class="item-img"/>
-                    <div class="item-info">
-                        <h3>${item.emoji} ${item.name}</h3>
-                        <p><strong>Pairs With:</strong> ${formatPairs(item)}</p>
-                    </div>
-                </div>
+                <button class="panel-btn sub-item" data-name="${item.name}">
+                    ${item.emoji} ${item.name}
+                </button>
             `).join("")}
+        </div>
+    `;
+
+    document.querySelectorAll(".sub-item").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const name = btn.dataset.name;
+            const item = items.find(i => i.name === name);
+            renderItemDetails(item);
+        });
+    });
+}
+
+// --------------------------------------------------
+// RENDER ITEM DETAILS (right panel)
+// --------------------------------------------------
+function renderItemDetails(item) {
+    right().innerHTML = `
+        <div class="detail-box">
+            <h2>${item.emoji} ${item.name}</h2>
+
+            <img src="${item.image}" class="detail-img"/>
+
+            <h3>Pairs With</h3>
+            <p>${formatPairs(item)}</p>
+
+            ${item.directions ? `
+                <h3>Directions</h3>
+                <ul class="info-list">
+                    ${item.directions.map(step => `<li>${step}</li>`).join("")}
+                </ul>
+            ` : ""}
+
+            ${item.mealPrep ? `
+                <h3>Meal Prep Tips</h3>
+                <ul class="info-list">
+                    ${item.mealPrep.map(tip => `<li>${tip}</li>`).join("")}
+                </ul>
+            ` : ""}
+
+            ${item.links ? `
+                <h3>Buy Ingredients</h3>
+                <div class="link-list">
+                    ${Object.entries(item.links)
+                        .map(([store, url]) => `
+                            <a href="${url}" target="_blank" class="store-link">
+                                ${store.toUpperCase()}
+                            </a>
+                        `)
+                        .join("")}
+                </div>
+            ` : ""}
         </div>
     `;
 }
@@ -43,192 +133,43 @@ function renderList(title, items) {
 function formatPairs(item) {
     if (!item.pairsWith) return "N/A";
 
-    if (Array.isArray(item.pairsWith)) {
-        return item.pairsWith.join(", ");
-    }
+    if (Array.isArray(item.pairsWith)) return item.pairsWith.join(", ");
 
-    if (typeof item.pairsWith === "object") {
+    if (typeof item.pairsWith === "object")
         return Object.values(item.pairsWith).flat().join(", ");
-    }
 
     return "N/A";
 }
 
-// -------------------------------
-// MEAL BUILDER LOGIC
-// -------------------------------
-function renderMealBuilder() {
-    app.innerHTML = `
-        <h2 class="page-title">Meal Builder</h2>
-        <p class="page-desc">Choose one item from each category to build a full meal.</p>
-
-        <div id="meal-builder-container">
-
-            <div class="builder-section">
-                <h3>Meats</h3>
-                <div class="builder-list" id="builder-meats"></div>
-            </div>
-
-            <div class="builder-section">
-                <h3>Fillers</h3>
-                <div class="builder-list" id="builder-fillers"></div>
-            </div>
-
-            <div class="builder-section">
-                <h3>Vegetables</h3>
-                <div class="builder-list" id="builder-vegetables"></div>
-            </div>
-
-            <div class="builder-section">
-                <h3>Plus Items</h3>
-                <div class="builder-list" id="builder-plus"></div>
-            </div>
-
-            <h3>Your Meal</h3>
-            <div id="meal-preview"></div>
-
-            <button class="btn save-meal-btn" id="save-meal">Save Meal</button>
-            <button class="btn clear-meal-btn" id="clear-meal">Clear</button>
-        </div>
-    `;
-
-    const meal = {
-        meat: null,
-        filler: null,
-        vegetable: null,
-        plus: null
-    };
-
-    function updateMealPreview() {
-        const preview = document.getElementById("meal-preview");
-
-        preview.innerHTML = `
-            <div class="meal-preview-box">
-                <p><strong>Meat:</strong> ${meal.meat ? meal.meat.name : "None"}</p>
-                <p><strong>Filler:</strong> ${meal.filler ? meal.filler.name : "None"}</p>
-                <p><strong>Vegetable:</strong> ${meal.vegetable ? meal.vegetable.name : "None"}</p>
-                <p><strong>Plus:</strong> ${meal.plus ? meal.plus.name : "None"}</p>
-            </div>
-        `;
-    }
-
-    updateMealPreview();
-
-    document.getElementById("save-meal").addEventListener("click", () => {
-        const savedMeals = JSON.parse(localStorage.getItem("mealHistory") || "[]");
-
-        savedMeals.push({
-            ...meal,
-            timestamp: new Date().toISOString()
-        });
-
-        localStorage.setItem("mealHistory", JSON.stringify(savedMeals));
-
-        alert("Meal saved!");
-    });
-
-    document.getElementById("clear-meal").addEventListener("click", () => {
-        meal.meat = null;
-        meal.filler = null;
-        meal.vegetable = null;
-        meal.plus = null;
-
-        updateMealPreview();
-    });
-
-    function renderBuilderCategory(containerId, items, type) {
-        const container = document.getElementById(containerId);
-
-        container.innerHTML = items
-            .map(
-                item => `
-            <div class="builder-item" data-type="${type}" data-name="${item.name}">
-                <img src="${item.image}" class="builder-img"/>
-                <p>${item.emoji} ${item.name}</p>
-            </div>
-        `
-            )
-            .join("");
-
-        container.querySelectorAll(".builder-item").forEach(el => {
-            el.addEventListener("click", () => {
-                const selectedName = el.dataset.name;
-                const selectedItem = items.find(i => i.name === selectedName);
-
-                meal[type] = selectedItem;
-                updateMealPreview();
-            });
-        });
-    }
-
-    renderBuilderCategory("builder-meats", APP_DATA.meats, "meat");
-    renderBuilderCategory("builder-fillers", APP_DATA.fillers, "filler");
-    renderBuilderCategory("builder-vegetables", APP_DATA.vegetables, "vegetable");
-    renderBuilderCategory("builder-plus", APP_DATA.plus, "plus");
-}
-
-// -------------------------------
-// PAGE ROUTES
-// -------------------------------
+// --------------------------------------------------
+// ROUTES
+// --------------------------------------------------
 const routes = {
-    "meal-builder": () => renderMealBuilder(),
-    "sandwiches": () => renderList("Sandwiches", APP_DATA.sandwiches),
-    "drinks": () => renderList("Drinks", APP_DATA.drinks),
-
-    "history": () => {
-        const savedMeals = JSON.parse(localStorage.getItem("mealHistory") || "[]");
-
-        app.innerHTML = `
-            <h2 class="page-title">Meal History</h2>
-            <div class="list-container">
-                ${
-                    savedMeals.length === 0
-                        ? "<p>No meals saved yet.</p>"
-                        : savedMeals
-                              .map(
-                                  meal => `
-                    <div class="list-item">
-                        <div class="item-info">
-                            <h3>Saved Meal</h3>
-                            <p><strong>Meat:</strong> ${meal.meat?.name || "None"}</p>
-                            <p><strong>Filler:</strong> ${meal.filler?.name || "None"}</p>
-                            <p><strong>Vegetable:</strong> ${meal.vegetable?.name || "None"}</p>
-                            <p><strong>Plus:</strong> ${meal.plus?.name || "None"}</p>
-                        </div>
-                    </div>
-                `
-                              )
-                              .join("")
-                }
-            </div>
-        `;
+    "meal-builder": () => {
+        renderLayout();
+        renderMainCategories();
     },
-
+    "sandwiches": () => {
+        renderLayout();
+        renderSubcategories("sandwiches");
+    },
+    "drinks": () => {
+        renderLayout();
+        renderSubcategories("drinks");
+    },
     "categories": () => {
-        app.innerHTML = `
-            <h2 class="page-title">All Categories</h2>
-            <div class="category-list">
-                <button class="btn subcat" data-sub="meats">Meats</button>
-                <button class="btn subcat" data-sub="fillers">Fillers</button>
-                <button class="btn subcat" data-sub="vegetables">Vegetables</button>
-                <button class="btn subcat" data-sub="plus">Plus</button>
-                <button class="btn subcat" data-sub="sandwiches">Sandwiches</button>
-                <button class="btn subcat" data-sub="drinks">Drinks</button>
-            </div>
-        `;
-
-        document.querySelectorAll(".subcat").forEach(btn => {
-            btn.addEventListener("click", () => {
-                const sub = btn.dataset.sub;
-                renderList(sub.toUpperCase(), APP_DATA[sub]);
-            });
-        });
+        renderLayout();
+        renderMainCategories();
+    },
+    "history": () => {
+        renderLayout();
+        right().innerHTML = "<p>History coming soon.</p>";
     }
 };
 
-// -------------------------------
-// NAVIGATION HANDLER
-// -------------------------------
+// --------------------------------------------------
+// NAVIGATION
+// --------------------------------------------------
 document.querySelectorAll("nav .btn").forEach(btn => {
     btn.addEventListener("click", () => {
         const page = btn.dataset.page;
@@ -236,5 +177,5 @@ document.querySelectorAll("nav .btn").forEach(btn => {
     });
 });
 
-// Load default page
+// DEFAULT PAGE
 routes["meal-builder"]();
