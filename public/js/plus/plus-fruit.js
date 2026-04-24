@@ -454,6 +454,4 @@ export default [
     ],
 
     variations: [
-        "Sapote Pudding — mash with vanilla + honey.",
-        "Sapote Smoothie — sapote + milk + cinnamon.",
-        "
+        "Sapote Pudding — mash with vanilla
