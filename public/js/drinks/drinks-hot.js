@@ -3,7 +3,6 @@ export const drinksHot = [
         name: "Hot Coffee",
     image: "https://foodish-api.com/images/beverages/beverage3.jpg",
         emoji: "☕",
-        image: "https://foodish-api.com/images/beverages/beverage3.jpg",
         directions: [
             "Brew coffee.",
             "Add sugar or cream.",
@@ -28,7 +27,6 @@ export const drinksHot = [
         name: "Hot Chocolate",
     image: "https://foodish-api.com/images/beverages/beverage2.jpg",
         emoji: "🍫",
-        image: "https://foodish-api.com/images/beverages/beverage2.jpg",
         directions: [
             "Heat milk or water.",
             "Mix cocoa powder or packet.",

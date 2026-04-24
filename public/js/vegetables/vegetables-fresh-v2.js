@@ -3,7 +3,6 @@ export default [
         name: "Asparagus",
     image: "https://foodish-api.com/images/vegetables/asparagus.jpg",
         emoji: "🌿",
-        image: "https://foodish-api.com/images/vegetables/asparagus.jpg",
         directions: [
             "Trim woody ends.",
             "Roast at 425°F for 12 minutes.",
@@ -32,7 +31,6 @@ export default [
         name: "Red Cabbage",
     image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
         emoji: "🟣",
-        image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
         directions: [
             "Slice thin.",
             "Sauté 8 minutes or use raw in slaw.",
@@ -61,7 +59,6 @@ export default [
         name: "Cherry Tomatoes",
     image: "https://foodish-api.com/images/vegetables/tomato.jpg",
         emoji: "🍅",
-        image: "https://foodish-api.com/images/vegetables/tomato.jpg",
         directions: [
             "Eat raw or roast 15 minutes at 400°F.",
             "Add to salads, bowls, or pasta.",

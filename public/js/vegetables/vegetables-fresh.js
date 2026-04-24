@@ -3,7 +3,6 @@ export default [
         name: "Onions",
     image: "https://foodish-api.com/images/vegetables/onion.jpg",
         emoji: "🧅",
-        image: "https://foodish-api.com/images/vegetables/onion.jpg",
         directions: [
             "Slice or dice.",
             "Sauté 5–7 minutes until soft.",
@@ -32,7 +31,6 @@ export default [
         name: "Bell Peppers",
     image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
         emoji: "🫑",
-        image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
         directions: [
             "Slice into strips or dice.",
             "Sauté 6–8 minutes.",
@@ -61,7 +59,6 @@ export default [
         name: "Carrots",
     image: "https://foodish-api.com/images/vegetables/carrot.jpg",
         emoji: "🥕",
-        image: "https://foodish-api.com/images/vegetables/carrot.jpg",
         directions: [
             "Slice thin for fast cooking.",
             "Sauté 8–10 minutes.",
@@ -90,7 +87,6 @@ export default [
         name: "Cabbage",
     image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
         emoji: "🥬",
-        image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
         directions: [
             "Slice thin.",
             "Sauté 6–8 minutes.",
@@ -119,7 +115,6 @@ export default [
         name: "Spinach",
     image: "https://foodish-api.com/images/vegetables/spinach.jpg",
         emoji: "🌿",
-        image: "https://foodish-api.com/images/vegetables/spinach.jpg",
         directions: [
             "Sauté 2–3 minutes.",
             "Add raw to sandwiches.",
