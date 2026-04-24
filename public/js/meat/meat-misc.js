@@ -2,22 +2,37 @@ export default [
     {
         name: "Hot Dogs",
         emoji: "🌭",
-        image: "https://source.unsplash.com/featured/?hotdog",
+        image: "https://source.unsplash.com/400x300/?hotdog,food",
+        tags: ["cheap", "fast", "kid-friendly"],
+        time: { prep: "0 min", cook: "3–6 min" },
+        difficulty: "very easy",
+
         directions: [
-            "Pan fry 5 minutes.",
-            "Boil 3 minutes.",
-            "Air fry at 400°F for 6 minutes."
+            "Pan fry 5 minutes until browned.",
+            "Boil 3 minutes for classic style.",
+            "Air fry at 400°F for 6 minutes.",
+            "Slice into coins for rice bowls or stir fry."
         ],
+
+        variations: [
+            "Chili Dogs — add chili + cheese.",
+            "Breakfast Dogs — wrap in tortilla with eggs.",
+            "Asian Stir Fry — slice and fry with rice + soy sauce."
+        ],
+
         mealPrep: [
-            "Slice for rice bowls.",
-            "Use for sandwiches.",
-            "Store cooked 3 days."
+            "Slice for rice bowls or pasta.",
+            "Use for sandwiches or wraps.",
+            "Store cooked hot dogs 3 days.",
+            "Reheat in air fryer 2 minutes."
         ],
+
         pairsWith: {
-            fillers: ["rice", "ramen", "bread"],
-            vegetables: ["onions", "peppers"],
-            plus: ["cheese", "sauces"]
+            fillers: ["rice", "ramen", "bread", "mac and cheese"],
+            vegetables: ["onions", "peppers", "pickles"],
+            plus: ["cheese", "sauces", "eggs"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=hot+dogs",
             kroger: "https://www.kroger.com/search?query=hot%20dogs",
@@ -30,22 +45,37 @@ export default [
     {
         name: "Bacon",
         emoji: "🥓",
-        image: "https://source.unsplash.com/featured/?bacon",
+        image: "https://source.unsplash.com/400x300/?bacon,food",
+        tags: ["crispy", "breakfast", "salty"],
+        time: { prep: "1 min", cook: "8–15 min" },
+        difficulty: "easy",
+
         directions: [
-            "Pan fry 8–10 minutes.",
-            "Bake at 400°F for 15 minutes.",
-            "Air fry at 380°F for 8 minutes."
+            "Pan fry 8–10 minutes until crispy.",
+            "Bake at 400°F for 15 minutes on a rack.",
+            "Air fry at 380°F for 8 minutes.",
+            "Crumble into bowls, salads, or sandwiches."
         ],
+
+        variations: [
+            "Candied Bacon — add brown sugar + pepper.",
+            "Spicy Bacon — add chili flakes.",
+            "Maple Bacon — brush with maple syrup."
+        ],
+
         mealPrep: [
-            "Crumble for bowls.",
-            "Use for sandwiches.",
-            "Store cooked 4 days."
+            "Crumble for bowls or salads.",
+            "Use for sandwiches or wraps.",
+            "Store cooked bacon 4 days.",
+            "Reheat in air fryer 1–2 minutes."
         ],
+
         pairsWith: {
-            fillers: ["bread", "rice", "eggs"],
-            vegetables: ["tomatoes", "lettuce"],
-            plus: ["eggs", "cheese"]
+            fillers: ["bread", "rice", "eggs", "pasta"],
+            vegetables: ["tomatoes", "lettuce", "spinach"],
+            plus: ["eggs", "cheese", "avocado"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=bacon",
             kroger: "https://www.kroger.com/search?query=bacon",
@@ -58,22 +88,37 @@ export default [
     {
         name: "Sausage Links",
         emoji: "🌭",
-        image: "https://source.unsplash.com/featured/?sausage",
+        image: "https://source.unsplash.com/400x300/?sausage,links,food",
+        tags: ["breakfast", "protein", "quick"],
+        time: { prep: "0 min", cook: "5–10 min" },
+        difficulty: "easy",
+
         directions: [
-            "Pan fry 6–8 minutes.",
+            "Pan fry 6–8 minutes until browned.",
             "Air fry at 380°F for 10 minutes.",
-            "Boil 5 minutes."
+            "Boil 5 minutes for softer texture.",
+            "Slice into bowls or breakfast meals."
         ],
+
+        variations: [
+            "Sweet Maple Links — glaze with maple syrup.",
+            "Spicy Links — add hot sauce or chili flakes.",
+            "Sausage Stir Fry — slice and fry with peppers + onions."
+        ],
+
         mealPrep: [
-            "Slice for bowls.",
-            "Use for breakfast meals.",
-            "Store cooked 4 days."
+            "Slice for bowls or pasta.",
+            "Use for breakfast sandwiches.",
+            "Store cooked links 4 days.",
+            "Reheat in air fryer 2 minutes."
         ],
+
         pairsWith: {
-            fillers: ["rice", "bread", "potatoes"],
-            vegetables: ["onions", "peppers"],
-            plus: ["eggs", "cheese"]
+            fillers: ["rice", "bread", "potatoes", "pasta"],
+            vegetables: ["onions", "peppers", "spinach"],
+            plus: ["eggs", "cheese", "sauces"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=sausage+links",
             kroger: "https://www.kroger.com/search?query=sausage%20links",
