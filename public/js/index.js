@@ -1,10 +1,10 @@
-import { MEAT_ITEMS } from "/meat/meat-master.js";
-import { FILLER_ITEMS } from "/filler/filler-master.js";
-import { VEGETABLE_ITEMS } from "/vegetables/vegetables-master.js";
-import { PLUS_ITEMS } from "/plus/plus-master.js";
+import { MEAT_ITEMS } from "./meat/meat-master.js";
+import { FILLER_ITEMS } from "./filler/filler-master.js";
+import { VEGETABLE_ITEMS } from "./vegetables/vegetables-master.js";
+import { PLUS_ITEMS } from "./plus/plus-master.js";
 
-import { SANDWICH_ITEMS } from "/sandwiches/sandwiches-master.js";
-import { DRINK_ITEMS } from "/drinks/drinks-master.js";
+import { SANDWICH_ITEMS } from "./sandwiches/sandwiches-master.js";
+import { DRINK_ITEMS } from "./drinks/drinks-master.js";
 
 export const APP_DATA = {
     meats: MEAT_ITEMS,
