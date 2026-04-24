@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <title>Keep A Man Cookbook</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header class="main-header">
         <h1>🍽️ Keep A Man Cookbook</h1>
         <p class="subtitle">Build meals, save combos, add drinks, and explore categories</p>
     </header>
 
-    <!-- MAIN NAVIGATION -->
+    <!-- TOP NAVIGATION -->
     <nav class="nav">
         <button class="btn" data-page="meal-builder">Meal Builder</button>
         <button class="btn" data-page="sandwiches">Sandwiches</button>
@@ -22,10 +24,12 @@
         <button class="btn" data-page="categories">All Categories</button>
     </nav>
 
-    <!-- MAIN APP CONTAINER -->
-    <main id="app"></main>
+    <!-- MAIN APP ROOT -->
+    <main id="app">
+        <!-- JS will inject the 3-panel layout here -->
+    </main>
 
-    <!-- GLOBAL IMPORTER -->
+    <!-- JS ENTRYPOINT -->
     <script type="module" src="/js/index.js"></script>
 
 </body>
