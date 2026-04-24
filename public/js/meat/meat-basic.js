@@ -2,22 +2,38 @@ export default [
     {
         name: "Chicken Thighs",
         emoji: "🍗",
-        image: "https://source.unsplash.com/featured/?chicken,thighs",
+        image: "https://source.unsplash.com/400x300/?chicken,thighs,food",
+        tags: ["juicy", "budget", "high-protein", "meal-prep"],
+        time: { prep: "5 min", cook: "20–25 min" },
+        difficulty: "easy",
+
         directions: [
-            "Pan fry 10–12 minutes until crispy.",
-            "Bake at 400°F for 25 minutes.",
-            "Air fry at 380°F for 20 minutes."
+            "Pat thighs dry and season heavily with salt, pepper, garlic, and paprika.",
+            "Pan fry skin-side down for 7–8 minutes until crisp, then flip and cook 5–6 minutes.",
+            "Bake at 400°F for 25 minutes for hands-off cooking.",
+            "Air fry at 380°F for 20 minutes for maximum crispiness.",
+            "Optional: finish with butter, honey, or hot sauce glaze."
         ],
+
+        variations: [
+            "Honey Garlic Thighs — add honey + soy sauce + garlic.",
+            "Crispy Cajun Thighs — coat with Cajun seasoning + oil.",
+            "Lemon Pepper Thighs — finish with lemon juice + cracked pepper."
+        ],
+
         mealPrep: [
-            "Stays juicy 3–4 days.",
-            "Shred for bowls or sandwiches.",
-            "Freeze cooked portions."
+            "Stays juicy for 3–4 days in the fridge.",
+            "Shred for bowls, tacos, sandwiches, or wraps.",
+            "Freeze cooked portions up to 2 months.",
+            "Reheat in air fryer 3–4 minutes to restore crispiness."
         ],
+
         pairsWith: {
-            fillers: ["rice", "ramen", "bread"],
-            vegetables: ["onions", "peppers", "spinach"],
-            plus: ["eggs", "cheese"]
+            fillers: ["rice", "ramen", "mashed potatoes", "buttered noodles"],
+            vegetables: ["onions", "peppers", "spinach", "broccoli"],
+            plus: ["eggs", "cheese", "sauces"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=chicken+thighs",
             kroger: "https://www.kroger.com/search?query=chicken%20thighs",
@@ -30,22 +46,38 @@ export default [
     {
         name: "Chicken Breast",
         emoji: "🍗",
-        image: "https://source.unsplash.com/featured/?chicken,breast",
+        image: "https://source.unsplash.com/400x300/?chicken,breast,food",
+        tags: ["lean", "high-protein", "versatile"],
+        time: { prep: "5 min", cook: "15–22 min" },
+        difficulty: "medium",
+
         directions: [
-            "Slice thin and pan sear 6–8 minutes.",
-            "Bake at 375°F for 22 minutes.",
-            "Air fry at 380°F for 15 minutes."
+            "Slice breasts horizontally for even cooking.",
+            "Pan sear 6–8 minutes with butter and garlic.",
+            "Bake at 375°F for 22 minutes (do not overcook).",
+            "Air fry at 380°F for 15 minutes.",
+            "Let rest 5 minutes before slicing to keep juices in."
         ],
+
+        variations: [
+            "Italian Herb — add oregano, basil, garlic, olive oil.",
+            "Buffalo Chicken — toss in buffalo sauce after cooking.",
+            "Creamy Chicken — simmer in cream + garlic + parmesan."
+        ],
+
         mealPrep: [
             "Store with sauce to prevent drying.",
-            "Slice for sandwiches or wraps.",
-            "Freeze cooked strips."
+            "Slice for sandwiches, wraps, salads, or bowls.",
+            "Freeze cooked strips for fast meals.",
+            "Reheat gently with broth or sauce."
         ],
+
         pairsWith: {
-            fillers: ["pasta", "rice", "tortillas"],
-            vegetables: ["spinach", "tomatoes", "peppers"],
-            plus: ["cheese", "sauces"]
+            fillers: ["pasta", "rice", "tortillas", "quinoa"],
+            vegetables: ["spinach", "tomatoes", "peppers", "broccoli"],
+            plus: ["cheese", "sauces", "eggs"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=chicken+breast",
             kroger: "https://www.kroger.com/search?query=chicken%20breast",
@@ -58,22 +90,38 @@ export default [
     {
         name: "Ground Beef",
         emoji: "🥩",
-        image: "https://source.unsplash.com/featured/?ground,beef",
+        image: "https://source.unsplash.com/400x300/?ground,beef,food",
+        tags: ["fast", "versatile", "high-protein"],
+        time: { prep: "2 min", cook: "8–10 min" },
+        difficulty: "easy",
+
         directions: [
-            "Brown in pan 8–10 minutes.",
-            "Drain fat.",
-            "Season heavily."
+            "Brown beef in a hot pan for 8–10 minutes.",
+            "Drain excess fat if needed.",
+            "Season with salt, pepper, garlic, onion powder, paprika.",
+            "Add tomato sauce for instant pasta meat sauce.",
+            "Mix with taco seasoning for taco bowls."
         ],
+
+        variations: [
+            "Cheeseburger Beef — add cheese + ketchup + mustard.",
+            "Italian Beef — add basil, oregano, tomato paste.",
+            "Asian Beef — add soy sauce + ginger + garlic + honey."
+        ],
+
         mealPrep: [
             "Freeze cooked beef in 1-cup portions.",
-            "Use for pasta, rice bowls, tacos.",
-            "Mix with canned tomatoes for instant meals."
+            "Use for pasta, rice bowls, tacos, nachos, wraps.",
+            "Mix with canned tomatoes for instant meals.",
+            "Reheat in pan with a splash of broth."
         ],
+
         pairsWith: {
-            fillers: ["noodles", "rice", "potatoes"],
-            vegetables: ["onions", "peppers", "corn"],
-            plus: ["cheese", "beans"]
+            fillers: ["noodles", "rice", "potatoes", "tortillas"],
+            vegetables: ["onions", "peppers", "corn", "tomatoes"],
+            plus: ["cheese", "beans", "sour cream"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=ground+beef",
             kroger: "https://www.kroger.com/search?query=ground%20beef",
@@ -86,22 +134,38 @@ export default [
     {
         name: "Ground Turkey",
         emoji: "🦃",
-        image: "https://source.unsplash.com/featured/?ground,turkey",
+        image: "https://source.unsplash.com/400x300/?ground,turkey,food",
+        tags: ["lean", "budget", "healthy"],
+        time: { prep: "2 min", cook: "8–10 min" },
+        difficulty: "easy",
+
         directions: [
-            "Brown 8–10 minutes.",
+            "Brown turkey 8–10 minutes.",
             "Season aggressively (turkey is mild).",
-            "Add broth to keep moist."
+            "Add broth to keep moist.",
+            "Mix with veggies to stretch the meal.",
+            "Finish with soy sauce or hot sauce for flavor."
         ],
+
+        variations: [
+            "Turkey Taco Meat — add taco seasoning + salsa.",
+            "Turkey Stir Fry — add soy sauce + garlic + veggies.",
+            "Turkey Sloppy Joes — add ketchup + mustard + brown sugar."
+        ],
+
         mealPrep: [
             "Freeze cooked portions.",
-            "Use for bowls, tacos, wraps.",
-            "Mix with veggies to stretch."
+            "Use for bowls, tacos, wraps, pasta.",
+            "Mix with rice for high-volume meals.",
+            "Reheat with broth to restore moisture."
         ],
+
         pairsWith: {
-            fillers: ["rice", "noodles", "tortillas"],
-            vegetables: ["cabbage", "spinach", "onions"],
-            plus: ["eggs", "cheese"]
+            fillers: ["rice", "noodles", "tortillas", "quinoa"],
+            vegetables: ["cabbage", "spinach", "onions", "carrots"],
+            plus: ["eggs", "cheese", "sauces"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=ground+turkey",
             kroger: "https://www.kroger.com/search?query=ground%20turkey",
