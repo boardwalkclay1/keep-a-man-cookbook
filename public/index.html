@@ -2,87 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Keep A Man Cookbook — Build Progress</title>
+    <title>Keep A Man Cookbook</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>📚 Keep A Man Cookbook — Build Progress</h1>
-        <p class="subtitle">Developer Dashboard • Track all categories, modules, and progress</p>
+    <header class="main-header">
+        <h1>🍽️ Keep A Man Cookbook</h1>
+        <p class="subtitle">Build meals, save combos, add drinks, and explore categories</p>
     </header>
 
-    <!-- MEAT CATEGORY -->
-    <section class="category">
-        <h2>🍖 Meat Category</h2>
-        <ul>
-            <li data-status="done">meat-basic.js</li>
-            <li data-status="done">meat-canned.js</li>
-            <li data-status="done">meat-frozen.js</li>
-            <li data-status="done">meat-premium.js</li>
-            <li data-status="done">meat-misc.js</li>
-        </ul>
-    </section>
+    <!-- MAIN NAVIGATION -->
+    <nav class="nav">
+        <button class="btn" data-page="meal-builder">Meal Builder</button>
+        <button class="btn" data-page="sandwiches">Sandwiches</button>
+        <button class="btn" data-page="drinks">Drinks</button>
+        <button class="btn" data-page="history">Meal History</button>
+        <button class="btn" data-page="categories">All Categories</button>
+    </nav>
 
-    <!-- FILLER CATEGORY -->
-    <section class="category">
-        <h2>🍚 Filler Category</h2>
-        <ul>
-            <li data-status="done">filler-rice.js</li>
-            <li data-status="done">filler-noodles.js</li>
-            <li data-status="done">filler-bread.js</li>
-        </ul>
-    </section>
+    <!-- MAIN APP CONTAINER -->
+    <main id="app"></main>
 
-    <!-- VEGETABLE CATEGORY -->
-    <section class="category">
-        <h2>🥕 Vegetables Category</h2>
-        <ul>
-            <li data-status="done">vegetables-fresh.js</li>
-            <li data-status="done">vegetables-frozen.js</li>
-            <li data-status="done">vegetables-canned.js</li>
-            <li data-status="progress">vegetables-fresh-v2.js</li>
-            <li data-status="progress">vegetables-frozen-v2.js</li>
-            <li data-status="progress">vegetables-canned-v2.js</li>
-        </ul>
-    </section>
-
-    <!-- PLUS CATEGORY -->
-    <section class="category">
-        <h2>🍳 Plus Category</h2>
-        <ul>
-            <li data-status="pending">plus-eggs.js</li>
-            <li data-status="pending">plus-cheese.js</li>
-            <li data-status="pending">plus-fruit.js</li>
-        </ul>
-    </section>
-
-    <!-- SANDWICHES CATEGORY -->
-    <section class="category">
-        <h2>🥪 Sandwiches Category</h2>
-        <ul>
-            <li data-status="pending">sandwiches-basic.js</li>
-            <li data-status="pending">sandwiches-hot.js</li>
-            <li data-status="pending">sandwiches-wraps.js</li>
-        </ul>
-    </section>
-
-    <!-- DRINKS CATEGORY -->
-    <section class="category">
-        <h2>🥤 Drinks Category</h2>
-        <ul>
-            <li data-status="pending">drinks-cold.js</li>
-            <li data-status="pending">drinks-hot.js</li>
-            <li data-status="pending">drinks-smoothies.js</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>✔️ Done • 🟡 In Progress • ⏳ Not Started</p>
-    </footer>
-
-    <!-- INDEX.JS WILL BE ADDED HERE -->
+    <!-- GLOBAL IMPORTER -->
     <script type="module" src="./js/index.js"></script>
 
 </body>
