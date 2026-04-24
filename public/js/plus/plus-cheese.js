@@ -2,22 +2,40 @@ export default [
     {
         name: "Cheddar Cheese",
         emoji: "🧀",
-        image: "https://source.unsplash.com/featured/?cheddar,cheese",
+        image: "https://source.unsplash.com/400x300/?cheddar,cheese,food",
+        tags: ["sharp", "melty", "classic", "high-calorie"],
+        time: { prep: "0–2 min", cook: "1–5 min (melting)" },
+        difficulty: "very easy",
+
         directions: [
-            "Shred for bowls.",
-            "Melt on sandwiches.",
-            "Mix into eggs or rice."
+            "Shred fresh cheddar for best melt quality.",
+            "Melt on sandwiches, burgers, wraps, or quesadillas.",
+            "Mix into eggs, rice, pasta, or casseroles.",
+            "Add to air‑fried meals for a crispy cheese crust.",
+            "Use as topping for bowls, potatoes, or veggies."
         ],
+
+        variations: [
+            "Sharp Cheddar — bold flavor for sandwiches.",
+            "Mild Cheddar — melts smoother for sauces.",
+            "White Cheddar — cleaner flavor for bowls.",
+            "Smoked Cheddar — adds BBQ‑style depth."
+        ],
+
         mealPrep: [
-            "Lasts 2–3 weeks shredded.",
-            "Adds richness to any meal.",
-            "Perfect for sandwiches."
+            "Lasts 2–3 weeks shredded in sealed container.",
+            "Freeze blocks (not shredded) for long‑term storage.",
+            "Add to meal‑prep bowls for richness.",
+            "Mix into eggs or rice to boost calories and flavor."
         ],
+
         pairsWith: {
-            meats: ["chicken", "beef", "sausage"],
-            fillers: ["rice", "pasta", "bread"],
-            vegetables: ["peppers", "spinach"]
+            meats: ["chicken", "beef", "sausage", "bacon", "turkey"],
+            fillers: ["rice", "pasta", "bread", "potatoes"],
+            vegetables: ["peppers", "spinach", "broccoli", "onions"],
+            plus: ["eggs", "sour cream", "sauces"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=cheddar+cheese",
             kroger: "https://www.kroger.com/search?query=cheddar%20cheese",
@@ -30,22 +48,40 @@ export default [
     {
         name: "Mozzarella",
         emoji: "🧀",
-        image: "https://source.unsplash.com/featured/?mozzarella",
+        image: "https://source.unsplash.com/400x300/?mozzarella,cheese,food",
+        tags: ["melty", "stretchy", "italian"],
+        time: { prep: "0–2 min", cook: "1–5 min" },
+        difficulty: "very easy",
+
         directions: [
-            "Melt on pasta.",
-            "Use for sandwiches.",
-            "Add to rice bowls."
+            "Shred or slice mozzarella for best melt.",
+            "Use for pasta, pizza, sandwiches, and melts.",
+            "Add to rice bowls for creamy texture.",
+            "Mix into eggs for a stretchy omelet.",
+            "Layer into casseroles or baked dishes."
         ],
+
+        variations: [
+            "Fresh Mozzarella — soft, creamy, best for melts.",
+            "Low‑Moisture Mozzarella — best for pizza and browning.",
+            "Smoked Mozzarella — adds deep flavor to bowls.",
+            "Mozzarella Pearls — perfect for salads."
+        ],
+
         mealPrep: [
             "Lasts 2 weeks shredded.",
-            "Great for melts.",
-            "Perfect for Italian-style meals."
+            "Fresh mozzarella lasts 5–7 days once opened.",
+            "Great for Italian‑style meal prep bowls.",
+            "Melts beautifully in air fryer dishes."
         ],
+
         pairsWith: {
-            meats: ["meatballs", "chicken"],
-            fillers: ["pasta", "bread"],
-            vegetables: ["tomatoes", "spinach"]
+            meats: ["meatballs", "chicken", "sausage", "steak"],
+            fillers: ["pasta", "bread", "rice", "tortillas"],
+            vegetables: ["tomatoes", "spinach", "onions", "peppers"],
+            plus: ["basil", "olive oil", "sauce"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=mozzarella",
             kroger: "https://www.kroger.com/search?query=mozzarella",
