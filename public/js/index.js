@@ -20,9 +20,17 @@ console.log("APP_DATA Loaded:", APP_DATA);
 // MAIN APP CONTAINER
 const app = document.getElementById("app");
 
-// --------------------------------------------------
-// RENDER LAYOUT
-// --------------------------------------------------
+/* --------------------------------------------------
+   AUTO IMAGE FALLBACK
+-------------------------------------------------- */
+function autoImage(name) {
+    const keyword = name.toLowerCase().replace(/ /g, ",");
+    return `https://source.unsplash.com/featured/?${keyword},food`;
+}
+
+/* --------------------------------------------------
+   RENDER LAYOUT
+-------------------------------------------------- */
 function renderLayout() {
     app.innerHTML = `
         <div id="layout">
@@ -37,9 +45,9 @@ function left() { return document.getElementById("left-panel"); }
 function middle() { return document.getElementById("middle-panel"); }
 function right() { return document.getElementById("right-panel"); }
 
-// --------------------------------------------------
-// RENDER MAIN CATEGORIES
-// --------------------------------------------------
+/* --------------------------------------------------
+   MAIN CATEGORIES (LEFT PANEL)
+-------------------------------------------------- */
 function renderMainCategories() {
     left().innerHTML = `
         <h2 class="panel-title">Categories</h2>
@@ -61,9 +69,9 @@ function renderMainCategories() {
     });
 }
 
-// --------------------------------------------------
-// RENDER SUBCATEGORIES (middle panel)
-// --------------------------------------------------
+/* --------------------------------------------------
+   SUBCATEGORIES (MIDDLE PANEL)
+-------------------------------------------------- */
 function renderSubcategories(category) {
     const items = APP_DATA[category];
 
@@ -87,15 +95,15 @@ function renderSubcategories(category) {
     });
 }
 
-// --------------------------------------------------
-// RENDER ITEM DETAILS (right panel)
-// --------------------------------------------------
+/* --------------------------------------------------
+   ITEM DETAILS (RIGHT PANEL)
+-------------------------------------------------- */
 function renderItemDetails(item) {
     right().innerHTML = `
         <div class="detail-box">
             <h2>${item.emoji} ${item.name}</h2>
 
-            <img src="${item.image}" class="detail-img"/>
+            <img src="${item.image || autoImage(item.name)}" class="detail-img"/>
 
             <h3>Pairs With</h3>
             <p>${formatPairs(item)}</p>
@@ -141,9 +149,9 @@ function formatPairs(item) {
     return "N/A";
 }
 
-// --------------------------------------------------
-// ROUTES
-// --------------------------------------------------
+/* --------------------------------------------------
+   ROUTES
+-------------------------------------------------- */
 const routes = {
     "meal-builder": () => {
         renderLayout();
@@ -167,9 +175,9 @@ const routes = {
     }
 };
 
-// --------------------------------------------------
-// NAVIGATION
-// --------------------------------------------------
+/* --------------------------------------------------
+   NAVIGATION
+-------------------------------------------------- */
 document.querySelectorAll("nav .btn").forEach(btn => {
     btn.addEventListener("click", () => {
         const page = btn.dataset.page;
@@ -177,5 +185,7 @@ document.querySelectorAll("nav .btn").forEach(btn => {
     });
 });
 
-// DEFAULT PAGE
+/* --------------------------------------------------
+   DEFAULT PAGE
+-------------------------------------------------- */
 routes["meal-builder"]();
