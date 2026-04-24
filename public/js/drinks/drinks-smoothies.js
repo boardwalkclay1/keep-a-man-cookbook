@@ -2,7 +2,7 @@ export const drinksSmoothies = [
     {
         name: "Strawberry Smoothie",
         emoji: "🍓",
-        image: "https://source.unsplash.com/featured/?strawberry,smoothie",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Blend strawberries, yogurt, and ice until smooth.",
             "Add honey or sugar if needed.",
@@ -26,7 +26,7 @@ export const drinksSmoothies = [
     {
         name: "Banana Protein Shake",
         emoji: "🥤",
-        image: "https://source.unsplash.com/featured/?banana,shake",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Blend banana, milk, and protein powder.",
             "Add ice for thickness.",
@@ -50,7 +50,7 @@ export const drinksSmoothies = [
     {
         name: "Mango Smoothie",
         emoji: "🥭",
-        image: "https://source.unsplash.com/featured/?mango,smoothie",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Blend frozen mango, orange juice, and yogurt.",
             "Add ice if needed.",

@@ -2,7 +2,7 @@ export default [
     {
         name: "White Rice",
         emoji: "🍚",
-        image: "https://source.unsplash.com/400x300/?white,rice,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["classic", "cheap", "meal-prep"],
         time: { prep: "1 min", cook: "15–20 min" },
         difficulty: "easy",
@@ -46,7 +46,7 @@ export default [
     {
         name: "Jasmine Rice",
         emoji: "🌸",
-        image: "https://source.unsplash.com/400x300/?jasmine,rice,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["fragrant", "asian", "soft"],
         time: { prep: "1 min", cook: "12–14 min" },
         difficulty: "easy",
@@ -90,7 +90,7 @@ export default [
     {
         name: "Instant Rice",
         emoji: "⚡",
-        image: "https://source.unsplash.com/400x300/?instant,rice,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["fast", "emergency", "cheap"],
         time: { prep: "0 min", cook: "1–2 min" },
         difficulty: "very easy",
@@ -133,7 +133,7 @@ export default [
     {
         name: "Brown Rice",
         emoji: "🌾",
-        image: "https://source.unsplash.com/400x300/?brown,rice,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["healthy", "fiber", "meal-prep"],
         time: { prep: "1 min", cook: "35–40 min" },
         difficulty: "easy",

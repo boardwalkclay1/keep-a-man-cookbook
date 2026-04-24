@@ -2,7 +2,7 @@ export default [
     {
         name: "Canned Green Beans",
         emoji: "🥫",
-        image: "https://source.unsplash.com/featured/?green,beans",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Drain and heat 3–4 minutes.",
             "Sauté with onions.",
@@ -30,7 +30,7 @@ export default [
     {
         name: "Canned Corn",
         emoji: "🌽",
-        image: "https://source.unsplash.com/featured/?corn",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Drain and heat 2–3 minutes.",
             "Mix into rice or noodles.",
@@ -58,7 +58,7 @@ export default [
     {
         name: "Canned Diced Tomatoes",
         emoji: "🍅",
-        image: "https://source.unsplash.com/featured/?diced,tomatoes",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Heat 3–4 minutes.",
             "Add to pasta or rice.",

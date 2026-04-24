@@ -2,7 +2,7 @@ export const drinksHot = [
     {
         name: "Hot Coffee",
         emoji: "☕",
-        image: "https://source.unsplash.com/featured/?coffee",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Brew coffee.",
             "Add sugar or cream.",
@@ -26,7 +26,7 @@ export const drinksHot = [
     {
         name: "Hot Chocolate",
         emoji: "🍫",
-        image: "https://source.unsplash.com/featured/?hot,chocolate",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Heat milk or water.",
             "Mix cocoa powder or packet.",

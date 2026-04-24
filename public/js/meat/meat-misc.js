@@ -2,7 +2,7 @@ export default [
     {
         name: "Hot Dogs",
         emoji: "🌭",
-        image: "https://source.unsplash.com/400x300/?hotdog,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["cheap", "fast", "kid-friendly"],
         time: { prep: "0 min", cook: "3–6 min" },
         difficulty: "very easy",
@@ -45,7 +45,7 @@ export default [
     {
         name: "Bacon",
         emoji: "🥓",
-        image: "https://source.unsplash.com/400x300/?bacon,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["crispy", "breakfast", "salty"],
         time: { prep: "1 min", cook: "8–15 min" },
         difficulty: "easy",
@@ -88,7 +88,7 @@ export default [
     {
         name: "Sausage Links",
         emoji: "🌭",
-        image: "https://source.unsplash.com/400x300/?sausage,links,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["breakfast", "protein", "quick"],
         time: { prep: "0 min", cook: "5–10 min" },
         difficulty: "easy",

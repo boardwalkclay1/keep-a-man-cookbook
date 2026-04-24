@@ -2,7 +2,7 @@ export default [
     {
         name: "Canned Tuna",
         emoji: "🐟",
-        image: "https://source.unsplash.com/400x300/?tuna,can,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["cheap", "fast", "high-protein"],
         time: { prep: "1 min", cook: "0–5 min" },
         difficulty: "very easy",
@@ -46,7 +46,7 @@ export default [
     {
         name: "Canned Chicken",
         emoji: "🥫",
-        image: "https://source.unsplash.com/400x300/?canned,chicken,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["cheap", "fast", "versatile"],
         time: { prep: "1 min", cook: "0–5 min" },
         difficulty: "very easy",
@@ -90,7 +90,7 @@ export default [
     {
         name: "Spam",
         emoji: "🟪",
-        image: "https://source.unsplash.com/400x300/?spam,meat,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["long-shelf-life", "crispy", "salty"],
         time: { prep: "1 min", cook: "5–8 min" },
         difficulty: "easy",

@@ -2,7 +2,7 @@ export default [
     {
         name: "Sandwich Bread",
         emoji: "🍞",
-        image: "https://source.unsplash.com/400x300/?sandwich,bread,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["classic", "versatile", "cheap"],
         time: { prep: "0 min", cook: "1–3 min (toasting)" },
         difficulty: "very easy",
@@ -45,7 +45,7 @@ export default [
     {
         name: "Tortillas",
         emoji: "🌯",
-        image: "https://source.unsplash.com/400x300/?tortilla,wrap,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["wraps", "mexican", "meal-prep"],
         time: { prep: "0 min", cook: "10–15 sec warming" },
         difficulty: "very easy",
@@ -88,7 +88,7 @@ export default [
     {
         name: "Buns",
         emoji: "🍔",
-        image: "https://source.unsplash.com/400x300/?burger,buns,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["burgers", "sandwiches", "soft"],
         time: { prep: "0 min", cook: "1–2 min toasting" },
         difficulty: "very easy",

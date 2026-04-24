@@ -2,7 +2,7 @@ export default [
     {
         name: "Cheddar Cheese",
         emoji: "🧀",
-        image: "https://source.unsplash.com/400x300/?cheddar,cheese,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["sharp", "melty", "classic", "high-calorie"],
         time: { prep: "0–2 min", cook: "1–5 min (melting)" },
         difficulty: "very easy",
@@ -48,7 +48,7 @@ export default [
     {
         name: "Mozzarella",
         emoji: "🧀",
-        image: "https://source.unsplash.com/400x300/?mozzarella,cheese,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["melty", "stretchy", "italian"],
         time: { prep: "0–2 min", cook: "1–5 min" },
         difficulty: "very easy",

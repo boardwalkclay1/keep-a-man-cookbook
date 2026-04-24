@@ -2,7 +2,7 @@ export const sandwichesHot = [
     {
         name: "Grilled Cheese",
         emoji: "🧀",
-        image: "https://source.unsplash.com/featured/?grilled,cheese",
+        image: "https://picsum.photos/seed/default/400/300",
         ingredients: ["bread", "cheddar cheese", "butter"],
         directions: [
             "Butter bread.",
@@ -30,7 +30,7 @@ export const sandwichesHot = [
     {
         name: "Chicken Melt",
         emoji: "🍗",
-        image: "https://source.unsplash.com/featured/?chicken,melt,sandwich",
+        image: "https://picsum.photos/seed/default/400/300",
         ingredients: ["chicken", "cheese", "bread", "mayo"],
         directions: [
             "Layer chicken + cheese.",

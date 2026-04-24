@@ -2,7 +2,7 @@ export default [
     {
         name: "Frozen Meatballs",
         emoji: "🍝",
-        image: "https://source.unsplash.com/400x300/?meatballs,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["frozen", "quick", "family-friendly"],
         time: { prep: "0 min", cook: "10–18 min" },
         difficulty: "very easy",
@@ -45,7 +45,7 @@ export default [
     {
         name: "Frozen Chicken Strips",
         emoji: "🍗",
-        image: "https://source.unsplash.com/400x300/?chicken,strips,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["crispy", "fast", "kid-friendly"],
         time: { prep: "0 min", cook: "10–18 min" },
         difficulty: "very easy",
@@ -88,7 +88,7 @@ export default [
     {
         name: "Frozen Sausage Patties",
         emoji: "🥓",
-        image: "https://source.unsplash.com/400x300/?sausage,patty,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["breakfast", "fast", "protein"],
         time: { prep: "0 min", cook: "1–8 min" },
         difficulty: "very easy",

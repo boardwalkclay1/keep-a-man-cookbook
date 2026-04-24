@@ -2,7 +2,7 @@ export const sandwichesWraps = [
     {
         name: "Chicken Wrap",
         emoji: "🌯",
-        image: "https://source.unsplash.com/featured/?chicken,wrap",
+        image: "https://picsum.photos/seed/default/400/300",
         ingredients: ["tortilla", "chicken", "lettuce", "cheese"],
         directions: [
             "Warm tortilla.",
@@ -30,7 +30,7 @@ export const sandwichesWraps = [
     {
         name: "Breakfast Wrap",
         emoji: "🌯",
-        image: "https://source.unsplash.com/featured/?breakfast,wrap",
+        image: "https://picsum.photos/seed/default/400/300",
         ingredients: ["eggs", "cheese", "tortilla", "sausage"],
         directions: [
             "Scramble eggs.",

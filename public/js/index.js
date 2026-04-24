@@ -25,7 +25,7 @@ const app = document.getElementById("app");
 -------------------------------------------------- */
 function autoImage(name) {
     const keyword = name.toLowerCase().replace(/ /g, ",");
-    return `https://source.unsplash.com/featured/?${keyword},food`;
+    return `https://picsum.photos/seed/default/400/300
 }
 
 /* --------------------------------------------------

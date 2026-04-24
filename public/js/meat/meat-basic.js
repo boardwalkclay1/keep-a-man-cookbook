@@ -2,7 +2,7 @@ export default [
     {
         name: "Chicken Thighs",
         emoji: "🍗",
-        image: "https://source.unsplash.com/400x300/?chicken,thighs,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["juicy", "budget", "high-protein", "meal-prep"],
         time: { prep: "5 min", cook: "20–25 min" },
         difficulty: "easy",
@@ -46,7 +46,7 @@ export default [
     {
         name: "Chicken Breast",
         emoji: "🍗",
-        image: "https://source.unsplash.com/400x300/?chicken,breast,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["lean", "high-protein", "versatile"],
         time: { prep: "5 min", cook: "15–22 min" },
         difficulty: "medium",
@@ -90,7 +90,7 @@ export default [
     {
         name: "Ground Beef",
         emoji: "🥩",
-        image: "https://source.unsplash.com/400x300/?ground,beef,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["fast", "versatile", "high-protein"],
         time: { prep: "2 min", cook: "8–10 min" },
         difficulty: "easy",
@@ -134,7 +134,7 @@ export default [
     {
         name: "Ground Turkey",
         emoji: "🦃",
-        image: "https://source.unsplash.com/400x300/?ground,turkey,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["lean", "budget", "healthy"],
         time: { prep: "2 min", cook: "8–10 min" },
         difficulty: "easy",

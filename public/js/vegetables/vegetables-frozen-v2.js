@@ -2,7 +2,7 @@ export default [
     {
         name: "Frozen Mixed Peppers",
         emoji: "🫑",
-        image: "https://source.unsplash.com/featured/?frozen,peppers",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Sauté 6–7 minutes.",
             "Add to fajitas, bowls, or eggs.",
@@ -30,7 +30,7 @@ export default [
     {
         name: "Frozen Green Beans",
         emoji: "🟩",
-        image: "https://source.unsplash.com/featured/?green,beans",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Microwave 5 minutes or sauté 8 minutes.",
             "Season with butter and garlic.",

@@ -2,7 +2,7 @@ export const drinksCold = [
     {
         name: "Sweet Tea",
         emoji: "🧊",
-        image: "https://source.unsplash.com/featured/?sweet,tea",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Boil water.",
             "Steep tea bags 10 minutes.",
@@ -27,7 +27,7 @@ export const drinksCold = [
     {
         name: "Lemonade",
         emoji: "🍋",
-        image: "https://source.unsplash.com/featured/?lemonade",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Mix lemon juice + sugar + water.",
             "Stir until dissolved.",
@@ -51,7 +51,7 @@ export const drinksCold = [
     {
         name: "Kool-Aid",
         emoji: "🟥",
-        image: "https://source.unsplash.com/featured/?koolaid",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Mix packet + sugar + water.",
             "Stir well.",

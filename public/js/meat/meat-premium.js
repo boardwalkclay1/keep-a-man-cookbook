@@ -2,7 +2,7 @@ export default [
     {
         name: "Steak Strips",
         emoji: "🥩",
-        image: "https://source.unsplash.com/400x300/?steak,strips,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["premium", "quick", "high-protein"],
         time: { prep: "5 min", cook: "4–8 min" },
         difficulty: "medium",
@@ -46,7 +46,7 @@ export default [
     {
         name: "Pork Chops",
         emoji: "🍖",
-        image: "https://source.unsplash.com/400x300/?pork,chops,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["juicy", "budget", "family-friendly"],
         time: { prep: "5 min", cook: "12–22 min" },
         difficulty: "medium",
@@ -90,7 +90,7 @@ export default [
     {
         name: "Beef Roast",
         emoji: "🍲",
-        image: "https://source.unsplash.com/400x300/?beef,roast,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["slow-cook", "tender", "meal-prep"],
         time: { prep: "10 min", cook: "3–8 hours" },
         difficulty: "easy",

@@ -2,7 +2,7 @@ export const drinksSmoothies = [
     {
         name: "Strawberry Smoothie",
         emoji: "🍓",
-        image: "https://source.unsplash.com/featured/?strawberry,smoothie",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Blend strawberries + yogurt + ice.",
             "Add honey if needed.",
@@ -26,7 +26,7 @@ export const drinksSmoothies = [
     {
         name: "Banana Protein Shake",
         emoji: "🥤",
-        image: "https://source.unsplash.com/featured/?banana,shake",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Blend banana + milk + protein powder.",
             "Add ice.",

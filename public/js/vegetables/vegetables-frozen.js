@@ -2,7 +2,7 @@ export default [
     {
         name: "Frozen Mixed Vegetables",
         emoji: "🥦",
-        image: "https://source.unsplash.com/400x300/?mixed,vegetables,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["frozen", "cheap", "meal-prep", "healthy"],
         time: { prep: "0 min", cook: "4–8 min" },
         difficulty: "very easy",
@@ -47,7 +47,7 @@ export default [
     {
         name: "Frozen Broccoli",
         emoji: "🥦",
-        image: "https://source.unsplash.com/400x300/?broccoli,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["healthy", "fiber", "meal-prep"],
         time: { prep: "0 min", cook: "3–15 min" },
         difficulty: "easy",
@@ -92,7 +92,7 @@ export default [
     {
         name: "Frozen Peas",
         emoji: "🟢",
-        image: "https://source.unsplash.com/400x300/?peas,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["protein", "cheap", "fast"],
         time: { prep: "0 min", cook: "2–5 min" },
         difficulty: "very easy",

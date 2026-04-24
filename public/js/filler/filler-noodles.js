@@ -2,7 +2,7 @@ export default [
     {
         name: "Ramen Noodles",
         emoji: "🍜",
-        image: "https://source.unsplash.com/400x300/?ramen,noodles,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["cheap", "fast", "versatile"],
         time: { prep: "1 min", cook: "3 min" },
         difficulty: "very easy",
@@ -45,7 +45,7 @@ export default [
     {
         name: "Egg Noodles",
         emoji: "🍝",
-        image: "https://source.unsplash.com/400x300/?egg,noodles,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["comfort", "soft", "classic"],
         time: { prep: "1 min", cook: "6–7 min" },
         difficulty: "easy",
@@ -88,7 +88,7 @@ export default [
     {
         name: "Spaghetti",
         emoji: "🍝",
-        image: "https://source.unsplash.com/400x300/?spaghetti,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["classic", "meal-prep", "cheap"],
         time: { prep: "1 min", cook: "10–12 min" },
         difficulty: "easy",
@@ -131,7 +131,7 @@ export default [
     {
         name: "Rice Noodles",
         emoji: "🍜",
-        image: "https://source.unsplash.com/400x300/?rice,noodles,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["asian", "light", "gluten-free"],
         time: { prep: "1 min", cook: "10 min soak" },
         difficulty: "easy",

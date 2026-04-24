@@ -5,7 +5,7 @@ const PLUS_FRUITS = [
   {
     name: "Bananas",
     emoji: "🍌",
-    image: "https://source.unsplash.com/400x300/?bananas,fruit,food",
+    image: "https://picsum.photos/seed/default/400/300",
     tags: ["sweet", "cheap", "snack", "smoothies", "energy"],
     time: { prep: "0–2 min", cook: "none" },
     difficulty: "very easy",
@@ -37,7 +37,7 @@ const PLUS_FRUITS = [
   {
     name: "Apples",
     emoji: "🍎",
-    image: "https://source.unsplash.com/400x300/?apples,fruit,food",
+    image: "https://picsum.photos/seed/default/400/300",
     tags: ["crisp", "sweet", "snack", "fiber"],
     time: { prep: "1–3 min", cook: "0–10 min" },
     difficulty: "very easy",
@@ -68,7 +68,7 @@ const PLUS_FRUITS = [
   {
     name: "Strawberries",
     emoji: "🍓",
-    image: "https://source.unsplash.com/400x300/?strawberries,fruit,food",
+    image: "https://picsum.photos/seed/default/400/300",
     tags: ["sweet", "fresh", "snack", "smoothies"],
     time: { prep: "1–3 min", cook: "0–5 min" },
     difficulty: "very easy",
@@ -99,7 +99,7 @@ const PLUS_FRUITS = [
   {
     name: "Pineapple",
     emoji: "🍍",
-    image: "https://source.unsplash.com/400x300/?pineapple,fruit,food",
+    image: "https://picsum.photos/seed/default/400/300",
     tags: ["tropical", "juicy", "sweet", "acidic"],
     time: { prep: "3–5 min", cook: "0–10 min" },
     difficulty: "easy",
@@ -130,7 +130,7 @@ const PLUS_FRUITS = [
   {
     name: "Mango",
     emoji: "🥭",
-    image: "https://source.unsplash.com/400x300/?mango,fruit,food",
+    image: "https://picsum.photos/seed/default/400/300",
     tags: ["tropical", "sweet", "juicy", "smoothies"],
     time: { prep: "2–4 min", cook: "none" },
     difficulty: "easy",

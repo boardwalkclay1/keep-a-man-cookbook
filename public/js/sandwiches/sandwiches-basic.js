@@ -2,7 +2,7 @@ export const sandwichesBasic = [
     {
         name: "Tuna Sandwich",
         emoji: "🥪",
-        image: "https://source.unsplash.com/featured/?tuna,sandwich",
+        image: "https://picsum.photos/seed/default/400/300",
         ingredients: ["canned tuna", "mayo", "bread", "lettuce"],
         directions: [
             "Mix tuna + mayo.",
@@ -30,7 +30,7 @@ export const sandwichesBasic = [
     {
         name: "PB&J",
         emoji: "🥜",
-        image: "https://source.unsplash.com/featured/?peanutbutter,jelly,sandwich",
+        image: "https://picsum.photos/seed/default/400/300",
         ingredients: ["peanut butter", "jelly", "bread"],
         directions: [
             "Spread peanut butter.",

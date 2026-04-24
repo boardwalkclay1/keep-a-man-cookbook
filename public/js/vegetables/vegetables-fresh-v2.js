@@ -2,7 +2,7 @@ export default [
     {
         name: "Asparagus",
         emoji: "🌿",
-        image: "https://source.unsplash.com/featured/?asparagus",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Trim woody ends.",
             "Roast at 425°F for 12 minutes.",
@@ -30,7 +30,7 @@ export default [
     {
         name: "Red Cabbage",
         emoji: "🟣",
-        image: "https://source.unsplash.com/featured/?red,cabbage",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Slice thin.",
             "Sauté 8 minutes or use raw in slaw.",
@@ -58,7 +58,7 @@ export default [
     {
         name: "Cherry Tomatoes",
         emoji: "🍅",
-        image: "https://source.unsplash.com/featured/?cherry,tomatoes",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Eat raw or roast 15 minutes at 400°F.",
             "Add to salads, bowls, or pasta.",

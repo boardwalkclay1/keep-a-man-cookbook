@@ -2,7 +2,7 @@ export default [
     {
         name: "Whole Eggs",
         emoji: "🥚",
-        image: "https://source.unsplash.com/400x300/?eggs,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["protein", "breakfast", "cheap", "versatile"],
         time: { prep: "1 min", cook: "2–10 min" },
         difficulty: "easy",
@@ -48,7 +48,7 @@ export default [
     {
         name: "Egg Whites",
         emoji: "⚪",
-        image: "https://source.unsplash.com/400x300/?egg,whites,food",
+        image: "https://picsum.photos/seed/default/400/300",
         tags: ["lean", "low‑fat", "high‑protein"],
         time: { prep: "1 min", cook: "3–4 min" },
         difficulty: "easy",

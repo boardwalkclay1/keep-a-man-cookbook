@@ -2,7 +2,7 @@ export default [
     {
         name: "Canned Carrots",
         emoji: "🥕",
-        image: "https://source.unsplash.com/featured/?canned,carrots",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Drain and heat 3–4 minutes.",
             "Add butter and brown sugar for glaze.",
@@ -30,7 +30,7 @@ export default [
     {
         name: "Canned Potatoes",
         emoji: "🥔",
-        image: "https://source.unsplash.com/featured/?canned,potatoes",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Drain and pan-fry 8 minutes.",
             "Season with garlic and paprika.",

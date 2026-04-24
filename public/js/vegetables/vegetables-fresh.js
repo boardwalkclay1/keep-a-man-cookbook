@@ -2,7 +2,7 @@ export default [
     {
         name: "Onions",
         emoji: "🧅",
-        image: "https://source.unsplash.com/featured/?onions",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Slice or dice.",
             "Sauté 5–7 minutes until soft.",
@@ -30,7 +30,7 @@ export default [
     {
         name: "Bell Peppers",
         emoji: "🫑",
-        image: "https://source.unsplash.com/featured/?bell,peppers",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Slice into strips or dice.",
             "Sauté 6–8 minutes.",
@@ -58,7 +58,7 @@ export default [
     {
         name: "Carrots",
         emoji: "🥕",
-        image: "https://source.unsplash.com/featured/?carrots",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Slice thin for fast cooking.",
             "Sauté 8–10 minutes.",
@@ -86,7 +86,7 @@ export default [
     {
         name: "Cabbage",
         emoji: "🥬",
-        image: "https://source.unsplash.com/featured/?cabbage",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Slice thin.",
             "Sauté 6–8 minutes.",
@@ -114,7 +114,7 @@ export default [
     {
         name: "Spinach",
         emoji: "🌿",
-        image: "https://source.unsplash.com/featured/?spinach",
+        image: "https://picsum.photos/seed/default/400/300",
         directions: [
             "Sauté 2–3 minutes.",
             "Add raw to sandwiches.",
