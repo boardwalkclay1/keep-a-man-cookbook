@@ -388,7 +388,7 @@ export default [
 },
 
 /* --------------------------------------------------
-   EXOTIC FRUITS (from your arborist list + more)
+   EXOTIC FRUITS
 -------------------------------------------------- */
 
 {
@@ -447,4 +447,13 @@ export default [
 
     directions: [
         "Wait until fruit is fully soft and dark — underripe sapote tastes bitter.",
-        "Cut open and scoop out the pudding-like
+        "Cut open and scoop out the pudding-like flesh.",
+        "Chill before eating for best flavor.",
+        "Blend into smoothies for a chocolate-like texture.",
+        "Use in desserts, bowls, or spreads."
+    ],
+
+    variations: [
+        "Sapote Pudding — mash with vanilla + honey.",
+        "Sapote Smoothie — sapote + milk + cinnamon.",
+        "
