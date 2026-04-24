@@ -2,22 +2,37 @@ export default [
     {
         name: "Frozen Meatballs",
         emoji: "🍝",
-        image: "https://source.unsplash.com/featured/?meatballs",
+        image: "https://source.unsplash.com/400x300/?meatballs,food",
+        tags: ["frozen", "quick", "family-friendly"],
+        time: { prep: "0 min", cook: "10–18 min" },
+        difficulty: "very easy",
+
         directions: [
-            "Air fry at 380°F for 10–12 minutes.",
-            "Bake at 400°F for 18 minutes.",
-            "Microwave 3–4 minutes with sauce."
+            "Air fry at 380°F for 10–12 minutes, shaking halfway.",
+            "Bake at 400°F for 18 minutes on a lined tray.",
+            "Microwave 3–4 minutes with sauce for fastest option.",
+            "Simmer in marinara for 10 minutes for extra flavor."
         ],
+
+        variations: [
+            "Swedish Meatballs — simmer in cream + broth + Worcestershire.",
+            "BBQ Meatballs — toss in BBQ sauce after cooking.",
+            "Spicy Meatballs — add chili flakes + hot sauce."
+        ],
+
         mealPrep: [
-            "Store cooked meatballs 4 days.",
-            "Freeze again after cooking if needed.",
-            "Use for pasta, rice bowls, or sandwiches."
+            "Store cooked meatballs 4 days in airtight container.",
+            "Freeze cooked meatballs again for up to 2 months.",
+            "Perfect for pasta, rice bowls, subs, or meal-prep containers.",
+            "Reheat in air fryer 3 minutes to restore texture."
         ],
+
         pairsWith: {
-            fillers: ["spaghetti", "rice", "bread"],
-            vegetables: ["onions", "peppers", "spinach"],
-            plus: ["cheese", "sauce"]
+            fillers: ["spaghetti", "rice", "bread", "mashed potatoes"],
+            vegetables: ["onions", "peppers", "spinach", "broccoli"],
+            plus: ["cheese", "sauce", "herbs"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=frozen+meatballs",
             kroger: "https://www.kroger.com/search?query=frozen%20meatballs",
@@ -30,22 +45,37 @@ export default [
     {
         name: "Frozen Chicken Strips",
         emoji: "🍗",
-        image: "https://source.unsplash.com/featured/?chicken,strips",
+        image: "https://source.unsplash.com/400x300/?chicken,strips,food",
+        tags: ["crispy", "fast", "kid-friendly"],
+        time: { prep: "0 min", cook: "10–18 min" },
+        difficulty: "very easy",
+
         directions: [
-            "Air fry at 400°F for 10 minutes.",
-            "Bake at 425°F for 18 minutes.",
-            "Pan fry 6–8 minutes."
+            "Air fry at 400°F for 10 minutes for maximum crisp.",
+            "Bake at 425°F for 18 minutes on a wire rack.",
+            "Pan fry 6–8 minutes until golden.",
+            "Slice into strips for wraps or bowls."
         ],
+
+        variations: [
+            "Buffalo Strips — toss in buffalo sauce after cooking.",
+            "Honey BBQ Strips — glaze with honey + BBQ.",
+            "Chicken Caesar Wrap — slice and add to tortilla + Caesar dressing."
+        ],
+
         mealPrep: [
-            "Great for wraps and bowls.",
-            "Stays crispy when air fried.",
-            "Store 3 days after cooking."
+            "Stays crispy when air fried fresh.",
+            "Store cooked strips 3 days.",
+            "Great for wraps, salads, bowls, sandwiches.",
+            "Reheat in air fryer 3 minutes to restore crunch."
         ],
+
         pairsWith: {
-            fillers: ["tortillas", "rice", "noodles"],
-            vegetables: ["lettuce", "tomatoes", "onions"],
-            plus: ["cheese", "sauces"]
+            fillers: ["tortillas", "rice", "noodles", "fries"],
+            vegetables: ["lettuce", "tomatoes", "onions", "spinach"],
+            plus: ["cheese", "sauces", "pickles"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=frozen+chicken+strips",
             kroger: "https://www.kroger.com/search?query=frozen%20chicken%20strips",
@@ -58,22 +88,37 @@ export default [
     {
         name: "Frozen Sausage Patties",
         emoji: "🥓",
-        image: "https://source.unsplash.com/featured/?sausage,patty",
+        image: "https://source.unsplash.com/400x300/?sausage,patty,food",
+        tags: ["breakfast", "fast", "protein"],
+        time: { prep: "0 min", cook: "1–8 min" },
+        difficulty: "very easy",
+
         directions: [
-            "Pan fry 4–5 minutes per side.",
+            "Pan fry 4–5 minutes per side until browned.",
             "Air fry at 380°F for 8 minutes.",
-            "Microwave 1–2 minutes."
+            "Microwave 1–2 minutes for fastest option.",
+            "Crumble into eggs or breakfast bowls."
         ],
+
+        variations: [
+            "Maple Sausage — drizzle with maple syrup.",
+            "Spicy Sausage — add chili flakes or hot sauce.",
+            "Sausage Egg Muffin — add egg + cheese + English muffin."
+        ],
+
         mealPrep: [
             "Perfect for breakfast sandwiches.",
             "Store cooked patties 4 days.",
-            "Freeze cooked patties for fast meals."
+            "Freeze cooked patties for grab-and-go meals.",
+            "Reheat in air fryer 2 minutes."
         ],
+
         pairsWith: {
-            fillers: ["bread", "biscuits", "rice"],
-            vegetables: ["onions", "spinach"],
-            plus: ["eggs", "cheese"]
+            fillers: ["bread", "biscuits", "rice", "hash browns"],
+            vegetables: ["onions", "spinach", "peppers"],
+            plus: ["eggs", "cheese", "syrup"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=frozen+sausage+patties",
             kroger: "https://www.kroger.com/search?query=frozen%20sausage%20patties",
