@@ -21,10 +21,8 @@ console.log("APP_DATA Loaded:", APP_DATA);
 const app = document.getElementById("app");
 
 // -------------------------------
-// RENDER FUNCTIONS
+// GENERIC LIST RENDERER
 // -------------------------------
-
-// Generic list renderer
 function renderList(title, items) {
     app.innerHTML = `
         <h2 class="page-title">${title}</h2>
@@ -42,7 +40,6 @@ function renderList(title, items) {
     `;
 }
 
-// Format pairsWith field
 function formatPairs(item) {
     if (!item.pairsWith) return "N/A";
 
@@ -58,43 +55,156 @@ function formatPairs(item) {
 }
 
 // -------------------------------
-// PAGE ROUTES
+// MEAL BUILDER LOGIC
 // -------------------------------
+function renderMealBuilder() {
+    app.innerHTML = `
+        <h2 class="page-title">Meal Builder</h2>
+        <p class="page-desc">Choose one item from each category to build a full meal.</p>
 
-const routes = {
-    "meal-builder": () => {
-        app.innerHTML = `
-            <h2 class="page-title">Meal Builder</h2>
-            <p class="page-desc">Choose ingredients from each category to build a meal.</p>
+        <div id="meal-builder-container">
 
-            <div class="category-list">
-                <button class="btn subcat" data-sub="meats">Meats</button>
-                <button class="btn subcat" data-sub="fillers">Fillers</button>
-                <button class="btn subcat" data-sub="vegetables">Vegetables</button>
-                <button class="btn subcat" data-sub="plus">Plus</button>
+            <div class="builder-section">
+                <h3>Meats</h3>
+                <div class="builder-list" id="builder-meats"></div>
+            </div>
+
+            <div class="builder-section">
+                <h3>Fillers</h3>
+                <div class="builder-list" id="builder-fillers"></div>
+            </div>
+
+            <div class="builder-section">
+                <h3>Vegetables</h3>
+                <div class="builder-list" id="builder-vegetables"></div>
+            </div>
+
+            <div class="builder-section">
+                <h3>Plus Items</h3>
+                <div class="builder-list" id="builder-plus"></div>
+            </div>
+
+            <h3>Your Meal</h3>
+            <div id="meal-preview"></div>
+
+            <button class="btn save-meal-btn" id="save-meal">Save Meal</button>
+            <button class="btn clear-meal-btn" id="clear-meal">Clear</button>
+        </div>
+    `;
+
+    const meal = {
+        meat: null,
+        filler: null,
+        vegetable: null,
+        plus: null
+    };
+
+    function updateMealPreview() {
+        const preview = document.getElementById("meal-preview");
+
+        preview.innerHTML = `
+            <div class="meal-preview-box">
+                <p><strong>Meat:</strong> ${meal.meat ? meal.meat.name : "None"}</p>
+                <p><strong>Filler:</strong> ${meal.filler ? meal.filler.name : "None"}</p>
+                <p><strong>Vegetable:</strong> ${meal.vegetable ? meal.vegetable.name : "None"}</p>
+                <p><strong>Plus:</strong> ${meal.plus ? meal.plus.name : "None"}</p>
             </div>
         `;
+    }
 
-        document.querySelectorAll(".subcat").forEach(btn => {
-            btn.addEventListener("click", () => {
-                const sub = btn.dataset.sub;
-                renderList(sub.toUpperCase(), APP_DATA[sub]);
+    updateMealPreview();
+
+    document.getElementById("save-meal").addEventListener("click", () => {
+        const savedMeals = JSON.parse(localStorage.getItem("mealHistory") || "[]");
+
+        savedMeals.push({
+            ...meal,
+            timestamp: new Date().toISOString()
+        });
+
+        localStorage.setItem("mealHistory", JSON.stringify(savedMeals));
+
+        alert("Meal saved!");
+    });
+
+    document.getElementById("clear-meal").addEventListener("click", () => {
+        meal.meat = null;
+        meal.filler = null;
+        meal.vegetable = null;
+        meal.plus = null;
+
+        updateMealPreview();
+    });
+
+    function renderBuilderCategory(containerId, items, type) {
+        const container = document.getElementById(containerId);
+
+        container.innerHTML = items
+            .map(
+                item => `
+            <div class="builder-item" data-type="${type}" data-name="${item.name}">
+                <img src="${item.image}" class="builder-img"/>
+                <p>${item.emoji} ${item.name}</p>
+            </div>
+        `
+            )
+            .join("");
+
+        container.querySelectorAll(".builder-item").forEach(el => {
+            el.addEventListener("click", () => {
+                const selectedName = el.dataset.name;
+                const selectedItem = items.find(i => i.name === selectedName);
+
+                meal[type] = selectedItem;
+                updateMealPreview();
             });
         });
-    },
+    }
 
-    sandwiches: () => renderList("Sandwiches", APP_DATA.sandwiches),
+    renderBuilderCategory("builder-meats", APP_DATA.meats, "meat");
+    renderBuilderCategory("builder-fillers", APP_DATA.fillers, "filler");
+    renderBuilderCategory("builder-vegetables", APP_DATA.vegetables, "vegetable");
+    renderBuilderCategory("builder-plus", APP_DATA.plus, "plus");
+}
 
-    drinks: () => renderList("Drinks", APP_DATA.drinks),
+// -------------------------------
+// PAGE ROUTES
+// -------------------------------
+const routes = {
+    "meal-builder": () => renderMealBuilder(),
+    "sandwiches": () => renderList("Sandwiches", APP_DATA.sandwiches),
+    "drinks": () => renderList("Drinks", APP_DATA.drinks),
 
-    history: () => {
+    "history": () => {
+        const savedMeals = JSON.parse(localStorage.getItem("mealHistory") || "[]");
+
         app.innerHTML = `
             <h2 class="page-title">Meal History</h2>
-            <p class="page-desc">No meals saved yet.</p>
+            <div class="list-container">
+                ${
+                    savedMeals.length === 0
+                        ? "<p>No meals saved yet.</p>"
+                        : savedMeals
+                              .map(
+                                  meal => `
+                    <div class="list-item">
+                        <div class="item-info">
+                            <h3>Saved Meal</h3>
+                            <p><strong>Meat:</strong> ${meal.meat?.name || "None"}</p>
+                            <p><strong>Filler:</strong> ${meal.filler?.name || "None"}</p>
+                            <p><strong>Vegetable:</strong> ${meal.vegetable?.name || "None"}</p>
+                            <p><strong>Plus:</strong> ${meal.plus?.name || "None"}</p>
+                        </div>
+                    </div>
+                `
+                              )
+                              .join("")
+                }
+            </div>
         `;
     },
 
-    categories: () => {
+    "categories": () => {
         app.innerHTML = `
             <h2 class="page-title">All Categories</h2>
             <div class="category-list">
@@ -119,7 +229,6 @@ const routes = {
 // -------------------------------
 // NAVIGATION HANDLER
 // -------------------------------
-
 document.querySelectorAll("nav .btn").forEach(btn => {
     btn.addEventListener("click", () => {
         const page = btn.dataset.page;
