@@ -21,11 +21,11 @@ console.log("APP_DATA Loaded:", APP_DATA);
 const app = document.getElementById("app");
 
 /* --------------------------------------------------
-   AUTO IMAGE FALLBACK
+   AUTO IMAGE FALLBACK (FOOD ONLY)
 -------------------------------------------------- */
 function autoImage(name) {
     const keyword = name.toLowerCase().replace(/ /g, "-");
-    return `https://picsum.photos/seed/${keyword}/400/300`;
+    return `https://loremflickr.com/400/300/${keyword},food`;
 }
 
 /* --------------------------------------------------
