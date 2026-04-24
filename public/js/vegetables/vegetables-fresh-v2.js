@@ -2,6 +2,8 @@ export default [
     {
         name: "Asparagus",
     image: "https://foodish-api.com/images/vegetables/asparagus.jpg",
+
+
         emoji: "🌿",
         directions: [
             "Trim woody ends.",
@@ -30,6 +32,8 @@ export default [
     {
         name: "Red Cabbage",
     image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
+
+
         emoji: "🟣",
         directions: [
             "Slice thin.",
@@ -58,6 +62,8 @@ export default [
     {
         name: "Cherry Tomatoes",
     image: "https://foodish-api.com/images/vegetables/tomato.jpg",
+
+
         emoji: "🍅",
         directions: [
             "Eat raw or roast 15 minutes at 400°F.",

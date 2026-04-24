@@ -2,6 +2,8 @@ export default [
     {
         name: "Canned Carrots",
     image: "https://foodish-api.com/images/vegetables/carrot.jpg",
+
+
         emoji: "🥕",
         directions: [
             "Drain and heat 3–4 minutes.",
@@ -30,6 +32,8 @@ export default [
     {
         name: "Canned Potatoes",
     image: "https://foodish-api.com/images/vegetables/potato.jpg",
+
+
         emoji: "🥔",
         directions: [
             "Drain and pan-fry 8 minutes.",

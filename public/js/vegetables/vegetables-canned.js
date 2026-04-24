@@ -2,6 +2,8 @@ export default [
     {
         name: "Canned Green Beans",
     image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
+
+
         emoji: "🥫",
         directions: [
             "Drain and heat 3–4 minutes.",
@@ -30,6 +32,8 @@ export default [
     {
         name: "Canned Corn",
     image: "https://foodish-api.com/images/vegetables/corn.jpg",
+
+
         emoji: "🌽",
         directions: [
             "Drain and heat 2–3 minutes.",
@@ -58,6 +62,8 @@ export default [
     {
         name: "Canned Diced Tomatoes",
     image: "https://foodish-api.com/images/vegetables/tomato.jpg",
+
+
         emoji: "🍅",
         directions: [
             "Heat 3–4 minutes.",

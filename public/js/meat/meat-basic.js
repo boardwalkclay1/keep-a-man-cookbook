@@ -2,6 +2,8 @@ export default [
     {
         name: "Chicken Thighs",
     image: "https://foodish-api.com/images/chicken/chicken3.jpg",
+
+
         emoji: "🍗",
         tags: ["juicy", "budget", "high-protein", "meal-prep"],
         time: { prep: "5 min", cook: "20–25 min" },
@@ -46,6 +48,8 @@ export default [
     {
         name: "Chicken Breast",
     image: "https://foodish-api.com/images/chicken/chicken2.jpg",
+
+
         emoji: "🍗",
         tags: ["lean", "high-protein", "versatile"],
         time: { prep: "5 min", cook: "15–22 min" },
@@ -90,6 +94,8 @@ export default [
     {
         name: "Ground Beef",
     image: "https://foodish-api.com/images/beef/beef3.jpg",
+
+
         emoji: "🥩",
         tags: ["fast", "versatile", "high-protein"],
         time: { prep: "2 min", cook: "8–10 min" },
@@ -134,6 +140,8 @@ export default [
     {
         name: "Ground Turkey",
     image: "https://foodish-api.com/images/turkey/turkey1.jpg",
+
+
         emoji: "🦃",
         tags: ["lean", "budget", "healthy"],
         time: { prep: "2 min", cook: "8–10 min" },

@@ -2,6 +2,8 @@ export default [
     {
         name: "Frozen Mixed Vegetables",
     image: "https://foodish-api.com/images/vegetables/mixed.jpg",
+
+
         emoji: "🥦",
         tags: ["frozen", "cheap", "meal-prep", "healthy"],
         time: { prep: "0 min", cook: "4–8 min" },
@@ -47,6 +49,8 @@ export default [
     {
         name: "Frozen Broccoli",
     image: "https://foodish-api.com/images/vegetables/broccoli.jpg",
+
+
         emoji: "🥦",
         tags: ["healthy", "fiber", "meal-prep"],
         time: { prep: "0 min", cook: "3–15 min" },
@@ -92,6 +96,8 @@ export default [
     {
         name: "Frozen Peas",
     image: "https://foodish-api.com/images/vegetables/peas.jpg",
+
+
         emoji: "🟢",
         tags: ["protein", "cheap", "fast"],
         time: { prep: "0 min", cook: "2–5 min" },

@@ -5,6 +5,8 @@ const PLUS_FRUITS = [
   {
     name: "Bananas",
     image: "https://foodish-api.com/images/fruits/banana.jpg",
+
+
     emoji: "🍌",
     tags: ["sweet", "cheap", "snack", "smoothies", "energy"],
     time: { prep: "0–2 min", cook: "none" },
@@ -37,6 +39,8 @@ const PLUS_FRUITS = [
   {
     name: "Apples",
     image: "https://foodish-api.com/images/fruits/apple.jpg",
+
+
     emoji: "🍎",
     tags: ["crisp", "sweet", "snack", "fiber"],
     time: { prep: "1–3 min", cook: "0–10 min" },
@@ -68,6 +72,8 @@ const PLUS_FRUITS = [
   {
     name: "Strawberries",
     image: "https://foodish-api.com/images/fruits/strawberry.jpg",
+
+
     emoji: "🍓",
     tags: ["sweet", "fresh", "snack", "smoothies"],
     time: { prep: "1–3 min", cook: "0–5 min" },
@@ -99,6 +105,8 @@ const PLUS_FRUITS = [
   {
     name: "Pineapple",
     image: "https://foodish-api.com/images/fruits/pineapple.jpg",
+
+
     emoji: "🍍",
     tags: ["tropical", "juicy", "sweet", "acidic"],
     time: { prep: "3–5 min", cook: "0–10 min" },
@@ -130,6 +138,8 @@ const PLUS_FRUITS = [
   {
     name: "Mango",
     image: "https://foodish-api.com/images/fruits/mango.jpg",
+
+
     emoji: "🥭",
     tags: ["tropical", "sweet", "juicy", "smoothies"],
     time: { prep: "2–4 min", cook: "none" },

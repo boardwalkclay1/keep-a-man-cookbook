@@ -2,6 +2,8 @@ export default [
     {
         name: "White Rice",
     image: "https://foodish-api.com/images/rice/rice4.jpg",
+
+
         emoji: "🍚",
         tags: ["classic", "cheap", "meal-prep"],
         time: { prep: "1 min", cook: "15–20 min" },
@@ -46,6 +48,8 @@ export default [
     {
         name: "Jasmine Rice",
     image: "https://foodish-api.com/images/rice/rice3.jpg",
+
+
         emoji: "🌸",
         tags: ["fragrant", "asian", "soft"],
         time: { prep: "1 min", cook: "12–14 min" },
@@ -90,6 +94,8 @@ export default [
     {
         name: "Instant Rice",
     image: "https://foodish-api.com/images/rice/rice2.jpg",
+
+
         emoji: "⚡",
         tags: ["fast", "emergency", "cheap"],
         time: { prep: "0 min", cook: "1–2 min" },
@@ -133,6 +139,8 @@ export default [
     {
         name: "Brown Rice",
     image: "https://foodish-api.com/images/rice/rice1.jpg",
+
+
         emoji: "🌾",
         tags: ["healthy", "fiber", "meal-prep"],
         time: { prep: "1 min", cook: "35–40 min" },

@@ -2,6 +2,8 @@ export default [
     {
         name: "Sandwich Bread",
     image: "https://foodish-api.com/images/bread/bread1.jpg",
+
+
         emoji: "🍞",
         tags: ["classic", "versatile", "cheap"],
         time: { prep: "0 min", cook: "1–3 min (toasting)" },
@@ -45,6 +47,8 @@ export default [
     {
         name: "Tortillas",
     image: "https://foodish-api.com/images/bread/tortilla.jpg",
+
+
         emoji: "🌯",
         tags: ["wraps", "mexican", "meal-prep"],
         time: { prep: "0 min", cook: "10–15 sec warming" },
@@ -88,6 +92,8 @@ export default [
     {
         name: "Buns",
     image: "https://foodish-api.com/images/burger/burger1.jpg",
+
+
         emoji: "🍔",
         tags: ["burgers", "sandwiches", "soft"],
         time: { prep: "0 min", cook: "1–2 min toasting" },

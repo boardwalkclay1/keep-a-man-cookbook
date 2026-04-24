@@ -2,6 +2,8 @@ export default [
     {
         name: "Onions",
     image: "https://foodish-api.com/images/vegetables/onion.jpg",
+
+
         emoji: "🧅",
         directions: [
             "Slice or dice.",
@@ -30,6 +32,8 @@ export default [
     {
         name: "Bell Peppers",
     image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
+
+
         emoji: "🫑",
         directions: [
             "Slice into strips or dice.",
@@ -58,6 +62,8 @@ export default [
     {
         name: "Carrots",
     image: "https://foodish-api.com/images/vegetables/carrot.jpg",
+
+
         emoji: "🥕",
         directions: [
             "Slice thin for fast cooking.",
@@ -86,6 +92,8 @@ export default [
     {
         name: "Cabbage",
     image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
+
+
         emoji: "🥬",
         directions: [
             "Slice thin.",
@@ -114,6 +122,8 @@ export default [
     {
         name: "Spinach",
     image: "https://foodish-api.com/images/vegetables/spinach.jpg",
+
+
         emoji: "🌿",
         directions: [
             "Sauté 2–3 minutes.",

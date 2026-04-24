@@ -2,6 +2,8 @@ export default [
     {
         name: "Whole Eggs",
     image: "https://foodish-api.com/images/egg/egg2.jpg",
+
+
         emoji: "🥚",
         tags: ["protein", "breakfast", "cheap", "versatile"],
         time: { prep: "1 min", cook: "2–10 min" },
@@ -48,6 +50,8 @@ export default [
     {
         name: "Egg Whites",
     image: "https://foodish-api.com/images/egg/egg1.jpg",
+
+
         emoji: "⚪",
         tags: ["lean", "low‑fat", "high‑protein"],
         time: { prep: "1 min", cook: "3–4 min" },

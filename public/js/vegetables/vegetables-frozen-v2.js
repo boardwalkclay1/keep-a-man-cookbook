@@ -2,6 +2,8 @@ export default [
     {
         name: "Frozen Mixed Peppers",
     image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
+
+
         emoji: "🫑",
         directions: [
             "Sauté 6–7 minutes.",
@@ -30,6 +32,8 @@ export default [
     {
         name: "Frozen Green Beans",
     image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
+
+
         emoji: "🟩",
         directions: [
             "Microwave 5 minutes or sauté 8 minutes.",

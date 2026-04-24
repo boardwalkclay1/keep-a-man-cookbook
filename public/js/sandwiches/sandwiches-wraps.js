@@ -2,6 +2,8 @@ export const sandwichesWraps = [
     {
         name: "Chicken Wrap",
     image: "https://foodish-api.com/images/sandwiches/sandwich3.jpg",
+
+
         emoji: "🌯",
         ingredients: ["tortilla", "chicken", "lettuce", "cheese"],
         directions: [
@@ -30,6 +32,8 @@ export const sandwichesWraps = [
     {
         name: "Breakfast Wrap",
     image: "https://foodish-api.com/images/sandwiches/sandwich1.jpg",
+
+
         emoji: "🌯",
         ingredients: ["eggs", "cheese", "tortilla", "sausage"],
         directions: [

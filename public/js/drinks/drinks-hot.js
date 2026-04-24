@@ -2,6 +2,8 @@ export const drinksHot = [
     {
         name: "Hot Coffee",
     image: "https://foodish-api.com/images/beverages/beverage3.jpg",
+
+
         emoji: "☕",
         directions: [
             "Brew coffee.",
@@ -26,6 +28,8 @@ export const drinksHot = [
     {
         name: "Hot Chocolate",
     image: "https://foodish-api.com/images/beverages/beverage2.jpg",
+
+
         emoji: "🍫",
         directions: [
             "Heat milk or water.",

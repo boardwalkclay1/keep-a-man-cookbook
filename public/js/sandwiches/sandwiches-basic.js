@@ -2,6 +2,8 @@ export const sandwichesBasic = [
     {
         name: "Tuna Sandwich",
     image: "https://foodish-api.com/images/sandwiches/sandwich6.jpg",
+
+
         emoji: "🥪",
         ingredients: ["canned tuna", "mayo", "bread", "lettuce"],
         directions: [
@@ -30,6 +32,8 @@ export const sandwichesBasic = [
     {
         name: "PB&J",
     image: "https://foodish-api.com/images/sandwiches/sandwich5.jpg",
+
+
         emoji: "🥜",
         ingredients: ["peanut butter", "jelly", "bread"],
         directions: [
