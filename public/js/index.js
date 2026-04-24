@@ -29,9 +29,9 @@ function autoImage(name) {
 }
 
 /* --------------------------------------------------
-   RENDER LAYOUT
+   INITIAL LAYOUT (ONLY RUNS ONCE)
 -------------------------------------------------- */
-function renderLayout() {
+function initLayout() {
     app.innerHTML = `
         <div id="layout">
             <div id="left-panel"></div>
@@ -63,8 +63,7 @@ function renderMainCategories() {
 
     document.querySelectorAll(".panel-btn").forEach(btn => {
         btn.addEventListener("click", () => {
-            const cat = btn.dataset.cat;
-            renderSubcategories(cat);
+            renderSubcategories(btn.dataset.cat);
         });
     });
 }
@@ -88,8 +87,7 @@ function renderSubcategories(category) {
 
     document.querySelectorAll(".sub-item").forEach(btn => {
         btn.addEventListener("click", () => {
-            const name = btn.dataset.name;
-            const item = items.find(i => i.name === name);
+            const item = items.find(i => i.name === btn.dataset.name);
             renderItemDetails(item);
         });
     });
@@ -140,57 +138,54 @@ function renderItemDetails(item) {
 
 function formatPairs(item) {
     if (!item.pairsWith) return "N/A";
-
     if (Array.isArray(item.pairsWith)) return item.pairsWith.join(", ");
-
-    if (typeof item.pairsWith === "object")
-        return Object.values(item.pairsWith).flat().join(", ");
-
+    if (typeof item.pairsWith === "object") return Object.values(item.pairsWith).flat().join(", ");
     return "N/A";
 }
 
 /* --------------------------------------------------
-   ROUTES
+   ROUTES (NO MORE RECREATING LAYOUT)
 -------------------------------------------------- */
 const routes = {
     "meal-builder": () => {
-        renderLayout();
         renderMainCategories();
+        middle().innerHTML = "<p>Select a category.</p>";
+        right().innerHTML = "<p>Select an item.</p>";
     },
     "sandwiches": () => {
-        renderLayout();
         renderSubcategories("sandwiches");
+        right().innerHTML = "<p>Select a sandwich.</p>";
     },
     "drinks": () => {
-        renderLayout();
         renderSubcategories("drinks");
+        right().innerHTML = "<p>Select a drink.</p>";
     },
     "categories": () => {
-        renderLayout();
         renderMainCategories();
+        middle().innerHTML = "<p>Select a category.</p>";
+        right().innerHTML = "<p>Select an item.</p>";
     },
     "history": () => {
-        renderLayout();
-        right().innerHTML = "<p>History coming soon.</p>";
+        left().innerHTML = "<h2>History</h2>";
+        middle().innerHTML = "<p>History coming soon.</p>";
+        right().innerHTML = "";
     }
 };
 
 /* --------------------------------------------------
-   NAVIGATION (FIXED)
+   NAVIGATION
 -------------------------------------------------- */
 function attachNavListeners() {
     document.querySelectorAll("nav .btn").forEach(btn => {
         btn.addEventListener("click", () => {
-            const page = btn.dataset.page;
-            routes[page]();
+            routes[btn.dataset.page]();
         });
     });
 }
 
 /* --------------------------------------------------
-   INITIALIZE APP (THE FIX)
+   INITIALIZE APP
 -------------------------------------------------- */
-renderLayout();          // 1️⃣ Create panels first
-renderMainCategories();  // 2️⃣ Load left panel
-attachNavListeners();    // 3️⃣ Attach nav AFTER layout exists
-routes["meal-builder"](); // 4️⃣ Load default route
+initLayout();          // Create layout ONCE
+attachNavListeners();  // Attach nav listeners
+routes["meal-builder"](); // Load default route
