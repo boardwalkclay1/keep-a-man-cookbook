@@ -2,22 +2,38 @@ export default [
     {
         name: "Steak Strips",
         emoji: "🥩",
-        image: "https://source.unsplash.com/featured/?steak,strips",
+        image: "https://source.unsplash.com/400x300/?steak,strips,food",
+        tags: ["premium", "quick", "high-protein"],
+        time: { prep: "5 min", cook: "4–8 min" },
+        difficulty: "medium",
+
         directions: [
-            "Pan sear 2–3 minutes per side.",
-            "Air fry at 400°F for 6 minutes.",
-            "Slice thin for bowls or sandwiches."
+            "Pat steak strips dry and season with salt, pepper, garlic, and paprika.",
+            "Pan sear 2–3 minutes per side for medium doneness.",
+            "Air fry at 400°F for 6 minutes for a fast option.",
+            "Slice thin against the grain for tenderness.",
+            "Optional: finish with butter + herbs for restaurant flavor."
         ],
+
+        variations: [
+            "Steak Stir Fry — cook with peppers + onions + soy sauce.",
+            "Garlic Butter Steak Bites — finish with butter + garlic + parsley.",
+            "Philly Steak — add onions + peppers + provolone."
+        ],
+
         mealPrep: [
-            "Best eaten within 2 days.",
-            "Store with sauce to keep tender.",
-            "Use for wraps, rice bowls, or sandwiches."
+            "Best eaten within 2 days (steak dries quickly).",
+            "Store with sauce or butter to keep tender.",
+            "Use for wraps, rice bowls, sandwiches, or salads.",
+            "Reheat gently in pan with a splash of broth."
         ],
+
         pairsWith: {
-            fillers: ["rice", "noodles", "bread"],
-            vegetables: ["peppers", "onions", "spinach"],
-            plus: ["cheese", "sauces"]
+            fillers: ["rice", "noodles", "bread", "mashed potatoes"],
+            vegetables: ["peppers", "onions", "spinach", "broccoli"],
+            plus: ["cheese", "sauces", "herbs"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=steak+strips",
             kroger: "https://www.kroger.com/search?query=steak%20strips",
@@ -30,22 +46,38 @@ export default [
     {
         name: "Pork Chops",
         emoji: "🍖",
-        image: "https://source.unsplash.com/featured/?pork,chops",
+        image: "https://source.unsplash.com/400x300/?pork,chops,food",
+        tags: ["juicy", "budget", "family-friendly"],
+        time: { prep: "5 min", cook: "12–22 min" },
+        difficulty: "medium",
+
         directions: [
-            "Pan fry 4–5 minutes per side.",
-            "Bake at 400°F for 22 minutes.",
-            "Air fry at 380°F for 12 minutes."
+            "Season chops with salt, pepper, garlic, and paprika.",
+            "Pan fry 4–5 minutes per side until golden.",
+            "Bake at 400°F for 22 minutes for hands-off cooking.",
+            "Air fry at 380°F for 12 minutes.",
+            "Let rest 5 minutes before slicing."
         ],
+
+        variations: [
+            "Apple Pork Chops — cook with apples + cinnamon.",
+            "Honey Garlic Pork — glaze with honey + soy + garlic.",
+            "Breaded Pork Chops — coat in breadcrumbs + air fry."
+        ],
+
         mealPrep: [
-            "Store 3 days.",
-            "Slice for sandwiches.",
-            "Serve with rice or potatoes."
+            "Store cooked chops 3 days.",
+            "Slice for sandwiches, wraps, or bowls.",
+            "Serve with rice, potatoes, or noodles.",
+            "Reheat with broth to keep moist."
         ],
+
         pairsWith: {
-            fillers: ["rice", "potatoes", "noodles"],
-            vegetables: ["green beans", "carrots", "onions"],
-            plus: ["apples", "sauce"]
+            fillers: ["rice", "potatoes", "noodles", "stuffing"],
+            vegetables: ["green beans", "carrots", "onions", "peas"],
+            plus: ["apples", "sauce", "herbs"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=pork+chops",
             kroger: "https://www.kroger.com/search?query=pork%20chops",
@@ -58,22 +90,38 @@ export default [
     {
         name: "Beef Roast",
         emoji: "🍲",
-        image: "https://source.unsplash.com/featured/?beef,roast",
+        image: "https://source.unsplash.com/400x300/?beef,roast,food",
+        tags: ["slow-cook", "tender", "meal-prep"],
+        time: { prep: "10 min", cook: "3–8 hours" },
+        difficulty: "easy",
+
         directions: [
-            "Slow cook 6–8 hours.",
-            "Bake at 300°F for 3 hours.",
-            "Shred for bowls or sandwiches."
+            "Season roast with salt, pepper, garlic, and onion powder.",
+            "Slow cook 6–8 hours until fork-tender.",
+            "Bake at 300°F for 3 hours covered.",
+            "Shred with forks for bowls, sandwiches, or wraps.",
+            "Optional: add broth + veggies for pot roast."
         ],
+
+        variations: [
+            "BBQ Shredded Beef — mix with BBQ sauce.",
+            "Italian Beef — add pepperoncini + Italian seasoning.",
+            "Beef Gravy Roast — simmer with gravy packet."
+        ],
+
         mealPrep: [
-            "Lasts 4–5 days.",
-            "Freeze shredded portions.",
-            "Use for rice bowls, sandwiches, or wraps."
+            "Lasts 4–5 days refrigerated.",
+            "Freeze shredded portions for fast meals.",
+            "Use for rice bowls, sandwiches, wraps, or tacos.",
+            "Reheat with broth to keep moist."
         ],
+
         pairsWith: {
-            fillers: ["rice", "potatoes", "bread"],
-            vegetables: ["carrots", "onions", "peas"],
-            plus: ["gravy", "cheese"]
+            fillers: ["rice", "potatoes", "bread", "noodles"],
+            vegetables: ["carrots", "onions", "peas", "celery"],
+            plus: ["gravy", "cheese", "herbs"]
         },
+
         links: {
             walmart: "https://www.walmart.com/search?q=beef+roast",
             kroger: "https://www.kroger.com/search?query=beef%20roast",
