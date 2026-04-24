@@ -24,8 +24,8 @@ const app = document.getElementById("app");
    AUTO IMAGE FALLBACK
 -------------------------------------------------- */
 function autoImage(name) {
-    const keyword = name.toLowerCase().replace(/ /g, ",");
-    return `https://picsum.photos/seed/default/400/300
+    const keyword = name.toLowerCase().replace(/ /g, "-");
+    return `https://picsum.photos/seed/${keyword}/400/300`;
 }
 
 /* --------------------------------------------------
@@ -144,7 +144,7 @@ function formatPairs(item) {
 }
 
 /* --------------------------------------------------
-   ROUTES (NO MORE RECREATING LAYOUT)
+   ROUTES
 -------------------------------------------------- */
 const routes = {
     "meal-builder": () => {
@@ -186,6 +186,6 @@ function attachNavListeners() {
 /* --------------------------------------------------
    INITIALIZE APP
 -------------------------------------------------- */
-initLayout();          // Create layout ONCE
-attachNavListeners();  // Attach nav listeners
-routes["meal-builder"](); // Load default route
+initLayout();
+attachNavListeners();
+routes["meal-builder"]();
