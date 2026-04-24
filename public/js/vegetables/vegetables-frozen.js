@@ -2,6 +2,7 @@ export default [
     {
         name: "Frozen Mixed Vegetables",
     image: "https://foodish-api.com/images/vegetables/mixed.jpg",
+    image: "https://foodish-api.com/images/vegetables/mixed.jpg",
 
 
         emoji: "🥦",
@@ -49,6 +50,7 @@ export default [
     {
         name: "Frozen Broccoli",
     image: "https://foodish-api.com/images/vegetables/broccoli.jpg",
+    image: "https://foodish-api.com/images/vegetables/broccoli.jpg",
 
 
         emoji: "🥦",
@@ -95,6 +97,7 @@ export default [
 
     {
         name: "Frozen Peas",
+    image: "https://foodish-api.com/images/vegetables/peas.jpg",
     image: "https://foodish-api.com/images/vegetables/peas.jpg",
 
 

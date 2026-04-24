@@ -2,6 +2,7 @@ export const drinksSmoothies = [
     {
         name: "Strawberry Smoothie",
     image: "https://foodish-api.com/images/beverages/beverage7.jpg",
+    image: "https://foodish-api.com/images/beverages/beverage7.jpg",
 
 
         emoji: "🍓",
@@ -28,6 +29,7 @@ export const drinksSmoothies = [
     {
         name: "Banana Protein Shake",
     image: "https://foodish-api.com/images/beverages/beverage1.jpg",
+    image: "https://foodish-api.com/images/beverages/beverage1.jpg",
 
 
         emoji: "🥤",
@@ -53,6 +55,7 @@ export const drinksSmoothies = [
 
     {
         name: "Mango Smoothie",
+    image: "https://foodish-api.com/images/beverages/beverage6.jpg",
     image: "https://foodish-api.com/images/beverages/beverage6.jpg",
 
 

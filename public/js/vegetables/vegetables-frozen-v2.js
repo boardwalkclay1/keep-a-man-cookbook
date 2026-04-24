@@ -2,6 +2,7 @@ export default [
     {
         name: "Frozen Mixed Peppers",
     image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
+    image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
 
 
         emoji: "🫑",
@@ -31,6 +32,7 @@ export default [
 
     {
         name: "Frozen Green Beans",
+    image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
     image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
 
 

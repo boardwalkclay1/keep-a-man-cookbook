@@ -2,6 +2,7 @@ export default [
     {
         name: "Cheddar Cheese",
     image: "https://foodish-api.com/images/dairy/cheese.jpg",
+    image: "https://foodish-api.com/images/dairy/cheese.jpg",
 
 
         emoji: "🧀",
@@ -49,6 +50,7 @@ export default [
 
     {
         name: "Mozzarella",
+    image: "https://foodish-api.com/images/dairy/cheese2.jpg",
     image: "https://foodish-api.com/images/dairy/cheese2.jpg",
 
 

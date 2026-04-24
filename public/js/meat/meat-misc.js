@@ -2,6 +2,7 @@ export default [
     {
         name: "Hot Dogs",
     image: "https://foodish-api.com/images/hotdog/hotdog1.jpg",
+    image: "https://foodish-api.com/images/hotdog/hotdog1.jpg",
 
 
         emoji: "🌭",
@@ -47,6 +48,7 @@ export default [
     {
         name: "Bacon",
     image: "https://foodish-api.com/images/bacon/bacon1.jpg",
+    image: "https://foodish-api.com/images/bacon/bacon1.jpg",
 
 
         emoji: "🥓",
@@ -91,6 +93,7 @@ export default [
 
     {
         name: "Sausage Links",
+    image: "https://foodish-api.com/images/sausage/sausage2.jpg",
     image: "https://foodish-api.com/images/sausage/sausage2.jpg",
 
 

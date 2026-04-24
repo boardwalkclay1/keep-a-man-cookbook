@@ -2,6 +2,7 @@ export default [
     {
         name: "Onions",
     image: "https://foodish-api.com/images/vegetables/onion.jpg",
+    image: "https://foodish-api.com/images/vegetables/onion.jpg",
 
 
         emoji: "🧅",
@@ -31,6 +32,7 @@ export default [
 
     {
         name: "Bell Peppers",
+    image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
     image: "https://foodish-api.com/images/vegetables/bellpepper.jpg",
 
 
@@ -62,6 +64,7 @@ export default [
     {
         name: "Carrots",
     image: "https://foodish-api.com/images/vegetables/carrot.jpg",
+    image: "https://foodish-api.com/images/vegetables/carrot.jpg",
 
 
         emoji: "🥕",
@@ -92,6 +95,7 @@ export default [
     {
         name: "Cabbage",
     image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
+    image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
 
 
         emoji: "🥬",
@@ -121,6 +125,7 @@ export default [
 
     {
         name: "Spinach",
+    image: "https://foodish-api.com/images/vegetables/spinach.jpg",
     image: "https://foodish-api.com/images/vegetables/spinach.jpg",
 
 

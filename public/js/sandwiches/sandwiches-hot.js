@@ -2,6 +2,7 @@ export const sandwichesHot = [
     {
         name: "Grilled Cheese",
     image: "https://foodish-api.com/images/sandwiches/sandwich4.jpg",
+    image: "https://foodish-api.com/images/sandwiches/sandwich4.jpg",
 
 
         emoji: "🧀",
@@ -31,6 +32,7 @@ export const sandwichesHot = [
 
     {
         name: "Chicken Melt",
+    image: "https://foodish-api.com/images/sandwiches/sandwich2.jpg",
     image: "https://foodish-api.com/images/sandwiches/sandwich2.jpg",
 
 

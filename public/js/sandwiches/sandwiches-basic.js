@@ -2,6 +2,7 @@ export const sandwichesBasic = [
     {
         name: "Tuna Sandwich",
     image: "https://foodish-api.com/images/sandwiches/sandwich6.jpg",
+    image: "https://foodish-api.com/images/sandwiches/sandwich6.jpg",
 
 
         emoji: "🥪",
@@ -31,6 +32,7 @@ export const sandwichesBasic = [
 
     {
         name: "PB&J",
+    image: "https://foodish-api.com/images/sandwiches/sandwich5.jpg",
     image: "https://foodish-api.com/images/sandwiches/sandwich5.jpg",
 
 

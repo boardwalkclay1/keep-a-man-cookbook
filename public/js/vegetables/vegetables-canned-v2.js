@@ -2,6 +2,7 @@ export default [
     {
         name: "Canned Carrots",
     image: "https://foodish-api.com/images/vegetables/carrot.jpg",
+    image: "https://foodish-api.com/images/vegetables/carrot.jpg",
 
 
         emoji: "🥕",
@@ -31,6 +32,7 @@ export default [
 
     {
         name: "Canned Potatoes",
+    image: "https://foodish-api.com/images/vegetables/potato.jpg",
     image: "https://foodish-api.com/images/vegetables/potato.jpg",
 
 

@@ -2,6 +2,7 @@ export default [
     {
         name: "White Rice",
     image: "https://foodish-api.com/images/rice/rice4.jpg",
+    image: "https://foodish-api.com/images/rice/rice4.jpg",
 
 
         emoji: "🍚",
@@ -47,6 +48,7 @@ export default [
 
     {
         name: "Jasmine Rice",
+    image: "https://foodish-api.com/images/rice/rice3.jpg",
     image: "https://foodish-api.com/images/rice/rice3.jpg",
 
 
@@ -94,6 +96,7 @@ export default [
     {
         name: "Instant Rice",
     image: "https://foodish-api.com/images/rice/rice2.jpg",
+    image: "https://foodish-api.com/images/rice/rice2.jpg",
 
 
         emoji: "⚡",
@@ -138,6 +141,7 @@ export default [
 
     {
         name: "Brown Rice",
+    image: "https://foodish-api.com/images/rice/rice1.jpg",
     image: "https://foodish-api.com/images/rice/rice1.jpg",
 
 

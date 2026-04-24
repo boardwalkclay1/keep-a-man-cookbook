@@ -2,6 +2,7 @@ export default [
     {
         name: "Canned Green Beans",
     image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
+    image: "https://foodish-api.com/images/vegetables/greenbeans.jpg",
 
 
         emoji: "🥫",
@@ -32,6 +33,7 @@ export default [
     {
         name: "Canned Corn",
     image: "https://foodish-api.com/images/vegetables/corn.jpg",
+    image: "https://foodish-api.com/images/vegetables/corn.jpg",
 
 
         emoji: "🌽",
@@ -61,6 +63,7 @@ export default [
 
     {
         name: "Canned Diced Tomatoes",
+    image: "https://foodish-api.com/images/vegetables/tomato.jpg",
     image: "https://foodish-api.com/images/vegetables/tomato.jpg",
 
 

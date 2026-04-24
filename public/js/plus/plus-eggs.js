@@ -2,6 +2,7 @@ export default [
     {
         name: "Whole Eggs",
     image: "https://foodish-api.com/images/egg/egg2.jpg",
+    image: "https://foodish-api.com/images/egg/egg2.jpg",
 
 
         emoji: "🥚",
@@ -49,6 +50,7 @@ export default [
 
     {
         name: "Egg Whites",
+    image: "https://foodish-api.com/images/egg/egg1.jpg",
     image: "https://foodish-api.com/images/egg/egg1.jpg",
 
 

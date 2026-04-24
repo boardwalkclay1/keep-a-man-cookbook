@@ -2,6 +2,7 @@ export default [
     {
         name: "Sandwich Bread",
     image: "https://foodish-api.com/images/bread/bread1.jpg",
+    image: "https://foodish-api.com/images/bread/bread1.jpg",
 
 
         emoji: "🍞",
@@ -47,6 +48,7 @@ export default [
     {
         name: "Tortillas",
     image: "https://foodish-api.com/images/bread/tortilla.jpg",
+    image: "https://foodish-api.com/images/bread/tortilla.jpg",
 
 
         emoji: "🌯",
@@ -91,6 +93,7 @@ export default [
 
     {
         name: "Buns",
+    image: "https://foodish-api.com/images/burger/burger1.jpg",
     image: "https://foodish-api.com/images/burger/burger1.jpg",
 
 

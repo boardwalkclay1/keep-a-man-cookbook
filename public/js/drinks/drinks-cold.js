@@ -2,6 +2,7 @@ export const drinksCold = [
     {
         name: "Sweet Tea",
     image: "https://foodish-api.com/images/beverages/beverage8.jpg",
+    image: "https://foodish-api.com/images/beverages/beverage8.jpg",
 
 
         emoji: "🧊",
@@ -29,6 +30,7 @@ export const drinksCold = [
     {
         name: "Lemonade",
     image: "https://foodish-api.com/images/beverages/beverage5.jpg",
+    image: "https://foodish-api.com/images/beverages/beverage5.jpg",
 
 
         emoji: "🍋",
@@ -54,6 +56,7 @@ export const drinksCold = [
 
     {
         name: "Kool-Aid",
+    image: "https://foodish-api.com/images/beverages/beverage4.jpg",
     image: "https://foodish-api.com/images/beverages/beverage4.jpg",
 
 

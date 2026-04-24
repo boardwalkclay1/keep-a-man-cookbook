@@ -2,6 +2,7 @@ export default [
     {
         name: "Steak Strips",
     image: "https://foodish-api.com/images/beef/beef4.jpg",
+    image: "https://foodish-api.com/images/beef/beef4.jpg",
 
 
         emoji: "🥩",
@@ -48,6 +49,7 @@ export default [
     {
         name: "Pork Chops",
     image: "https://foodish-api.com/images/pork/pork1.jpg",
+    image: "https://foodish-api.com/images/pork/pork1.jpg",
 
 
         emoji: "🍖",
@@ -93,6 +95,7 @@ export default [
 
     {
         name: "Beef Roast",
+    image: "https://foodish-api.com/images/beef/beef1.jpg",
     image: "https://foodish-api.com/images/beef/beef1.jpg",
 
 

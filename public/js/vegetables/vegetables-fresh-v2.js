@@ -2,6 +2,7 @@ export default [
     {
         name: "Asparagus",
     image: "https://foodish-api.com/images/vegetables/asparagus.jpg",
+    image: "https://foodish-api.com/images/vegetables/asparagus.jpg",
 
 
         emoji: "🌿",
@@ -32,6 +33,7 @@ export default [
     {
         name: "Red Cabbage",
     image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
+    image: "https://foodish-api.com/images/vegetables/cabbage.jpg",
 
 
         emoji: "🟣",
@@ -61,6 +63,7 @@ export default [
 
     {
         name: "Cherry Tomatoes",
+    image: "https://foodish-api.com/images/vegetables/tomato.jpg",
     image: "https://foodish-api.com/images/vegetables/tomato.jpg",
 
 

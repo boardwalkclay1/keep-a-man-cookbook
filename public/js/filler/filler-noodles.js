@@ -2,6 +2,7 @@ export default [
     {
         name: "Ramen Noodles",
     image: "https://foodish-api.com/images/pasta/pasta2.jpg",
+    image: "https://foodish-api.com/images/pasta/pasta2.jpg",
 
 
         emoji: "🍜",
@@ -46,6 +47,7 @@ export default [
 
     {
         name: "Egg Noodles",
+    image: "https://foodish-api.com/images/pasta/pasta1.jpg",
     image: "https://foodish-api.com/images/pasta/pasta1.jpg",
 
 
@@ -92,6 +94,7 @@ export default [
     {
         name: "Spaghetti",
     image: "https://foodish-api.com/images/pasta/pasta4.jpg",
+    image: "https://foodish-api.com/images/pasta/pasta4.jpg",
 
 
         emoji: "🍝",
@@ -136,6 +139,7 @@ export default [
 
     {
         name: "Rice Noodles",
+    image: "https://foodish-api.com/images/pasta/pasta3.jpg",
     image: "https://foodish-api.com/images/pasta/pasta3.jpg",
 
 

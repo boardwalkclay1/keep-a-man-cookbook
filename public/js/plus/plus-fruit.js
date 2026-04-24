@@ -5,6 +5,7 @@ const PLUS_FRUITS = [
   {
     name: "Bananas",
     image: "https://foodish-api.com/images/fruits/banana.jpg",
+    image: "https://foodish-api.com/images/fruits/banana.jpg",
 
 
     emoji: "🍌",
@@ -39,6 +40,7 @@ const PLUS_FRUITS = [
   {
     name: "Apples",
     image: "https://foodish-api.com/images/fruits/apple.jpg",
+    image: "https://foodish-api.com/images/fruits/apple.jpg",
 
 
     emoji: "🍎",
@@ -71,6 +73,7 @@ const PLUS_FRUITS = [
 
   {
     name: "Strawberries",
+    image: "https://foodish-api.com/images/fruits/strawberry.jpg",
     image: "https://foodish-api.com/images/fruits/strawberry.jpg",
 
 
@@ -105,6 +108,7 @@ const PLUS_FRUITS = [
   {
     name: "Pineapple",
     image: "https://foodish-api.com/images/fruits/pineapple.jpg",
+    image: "https://foodish-api.com/images/fruits/pineapple.jpg",
 
 
     emoji: "🍍",
@@ -137,6 +141,7 @@ const PLUS_FRUITS = [
 
   {
     name: "Mango",
+    image: "https://foodish-api.com/images/fruits/mango.jpg",
     image: "https://foodish-api.com/images/fruits/mango.jpg",
 
 
