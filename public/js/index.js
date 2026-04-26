@@ -17,11 +17,11 @@ export const APP_DATA = {
 
 console.log("APP_DATA Loaded:", APP_DATA);
 
-// MAIN APP CONTAINER
+// MAIN APP ROOT
 const app = document.getElementById("app");
 
 /* --------------------------------------------------
-   AUTO IMAGE FALLBACK (FOOD ONLY)
+   AUTO IMAGE FALLBACK
 -------------------------------------------------- */
 function autoImage(name) {
     const keyword = name.toLowerCase().replace(/ /g, "-");
@@ -29,7 +29,7 @@ function autoImage(name) {
 }
 
 /* --------------------------------------------------
-   INITIAL LAYOUT (ONLY RUNS ONCE)
+   INITIAL LAYOUT
 -------------------------------------------------- */
 function initLayout() {
     app.innerHTML = `
@@ -46,7 +46,23 @@ function middle() { return document.getElementById("middle-panel"); }
 function right() { return document.getElementById("right-panel"); }
 
 /* --------------------------------------------------
-   MAIN CATEGORIES (LEFT PANEL)
+   HOME SCREEN (NEW)
+-------------------------------------------------- */
+function renderHome() {
+    app.innerHTML = `
+        <section class="top-actions">
+            <a class="action-btn" href="/games/cooking/index.html">🎮 Play Cooking Game</a>
+            <button class="action-btn" id="startMealBuilder">🍳 Meal Builder</button>
+        </section>
+    `;
+
+    document.getElementById("startMealBuilder").addEventListener("click", () => {
+        routes["meal-builder"]();
+    });
+}
+
+/* --------------------------------------------------
+   MAIN CATEGORIES
 -------------------------------------------------- */
 function renderMainCategories() {
     left().innerHTML = `
@@ -69,7 +85,7 @@ function renderMainCategories() {
 }
 
 /* --------------------------------------------------
-   SUBCATEGORIES (MIDDLE PANEL)
+   SUBCATEGORIES
 -------------------------------------------------- */
 function renderSubcategories(category) {
     const items = APP_DATA[category];
@@ -94,7 +110,7 @@ function renderSubcategories(category) {
 }
 
 /* --------------------------------------------------
-   ITEM DETAILS (RIGHT PANEL)
+   ITEM DETAILS
 -------------------------------------------------- */
 function renderItemDetails(item) {
     right().innerHTML = `
@@ -144,28 +160,36 @@ function formatPairs(item) {
 }
 
 /* --------------------------------------------------
-   ROUTES
+   ROUTES (UPDATED)
 -------------------------------------------------- */
 const routes = {
+    "home": () => {
+        renderHome();
+    },
     "meal-builder": () => {
+        initLayout();
         renderMainCategories();
         middle().innerHTML = "<p>Select a category.</p>";
         right().innerHTML = "<p>Select an item.</p>";
     },
     "sandwiches": () => {
+        initLayout();
         renderSubcategories("sandwiches");
         right().innerHTML = "<p>Select a sandwich.</p>";
     },
     "drinks": () => {
+        initLayout();
         renderSubcategories("drinks");
         right().innerHTML = "<p>Select a drink.</p>";
     },
     "categories": () => {
+        initLayout();
         renderMainCategories();
         middle().innerHTML = "<p>Select a category.</p>";
         right().innerHTML = "<p>Select an item.</p>";
     },
     "history": () => {
+        initLayout();
         left().innerHTML = "<h2>History</h2>";
         middle().innerHTML = "<p>History coming soon.</p>";
         right().innerHTML = "";
@@ -184,8 +208,7 @@ function attachNavListeners() {
 }
 
 /* --------------------------------------------------
-   INITIALIZE APP
+   INITIALIZE APP (NEW)
 -------------------------------------------------- */
-initLayout();
 attachNavListeners();
-routes["meal-builder"]();
+routes["home"]();
