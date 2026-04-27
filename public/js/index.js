@@ -46,22 +46,6 @@ function middle() { return document.getElementById("middle-panel"); }
 function right() { return document.getElementById("right-panel"); }
 
 /* --------------------------------------------------
-   HOME SCREEN (NEW)
--------------------------------------------------- */
-function renderHome() {
-    app.innerHTML = `
-        <section class="top-actions">
-            <a class="action-btn" href="/games/cooking/index.html">🎮 Play Cooking Game</a>
-            <button class="action-btn" id="startMealBuilder">🍳 Meal Builder</button>
-        </section>
-    `;
-
-    document.getElementById("startMealBuilder").addEventListener("click", () => {
-        routes["meal-builder"]();
-    });
-}
-
-/* --------------------------------------------------
    MAIN CATEGORIES
 -------------------------------------------------- */
 function renderMainCategories() {
@@ -160,12 +144,9 @@ function formatPairs(item) {
 }
 
 /* --------------------------------------------------
-   ROUTES (UPDATED)
+   ROUTES
 -------------------------------------------------- */
 const routes = {
-    "home": () => {
-        renderHome();
-    },
     "meal-builder": () => {
         initLayout();
         renderMainCategories();
@@ -205,10 +186,13 @@ function attachNavListeners() {
             routes[btn.dataset.page]();
         });
     });
+
+    // TOP ACTION BUTTON (Meal Builder)
+    document.querySelector('.top-actions [data-page="meal-builder"]')
+        .addEventListener("click", () => routes["meal-builder"]());
 }
 
 /* --------------------------------------------------
-   INITIALIZE APP (NEW)
+   INITIALIZE
 -------------------------------------------------- */
 attachNavListeners();
-routes["home"]();
